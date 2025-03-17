@@ -1,4 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 def get_main_menu():
     keyboard = [
@@ -19,3 +20,10 @@ def get_product_categories_keyboard():
         [KeyboardButton(text="🔙 Назад до головного меню")]
     ]
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
+
+def get_next_actions_keyboard():
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="➡️ Дивитися інші овочі", callback_data="category_ovochi_next")],
+        [InlineKeyboardButton(text="🔙 Назад до категорій", callback_data="back_to_categories")]
+    ])
+    return keyboard
