@@ -33,6 +33,35 @@ def get_product_categories_keyboard():
 
     return ReplyKeyboardMarkup(keyboard=keyboard_rows, resize_keyboard=True)
 
+def get_products_keyboard(category_id: str):
+    """
+    Створює клавіатуру з продуктами обраної категорії
+    """
+    products = get_products_by_category(category_id)
+    
+    # Якщо немає продуктів у категорії
+    if not products:
+        return None
+
+    keyboard = []
+
+    # Генеруємо по 2 кнопки в рядку
+    row = []
+    for i, product in enumerate(products, start=1):
+        row.append(KeyboardButton(text=product["name"]))
+        if i % 2 == 0:
+            keyboard.append(row)
+            row = []
+    # Додаємо останній рядок, якщо залишився
+    if row:
+        keyboard.append(row)
+
+    # Кнопка назад
+    keyboard.append([KeyboardButton(text="🔙 Назад до категорій")])
+
+    return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
+
+
 def get_next_actions_keyboard():
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="➡️ Дивитися інші овочі", callback_data="category_ovochi_next")],
