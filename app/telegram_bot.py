@@ -82,6 +82,20 @@ def find_product_by_name(name: str):
     """
     return next((p for p in PRODUCTS if p["name"].lower() == name.lower()), None)
 
+def format_fodmaps(fodmaps: dict) -> str:
+    """
+    Форматує FODMAP значення в красивий рядок.
+    """
+    return (
+        f"Фруктоза: {fodmaps.get('fructose', '❓')}  "
+        f"Лактоза: {fodmaps.get('lactose', '❓')}\n"
+        f"Манітол: {fodmaps.get('mannitol', '❓')}  "
+        f"Сорбітол: {fodmaps.get('sorbitol', '❓')}\n"
+        f"ГОС: {fodmaps.get('gos', '❓')}  "
+        f"Фруктани: {fodmaps.get('fructans', '❓')}"
+    )
+
+
 @router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
 async def show_product_info(message: types.Message):
     # Пошук продукту за ім'ям
