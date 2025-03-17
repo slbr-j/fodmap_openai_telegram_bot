@@ -7,8 +7,13 @@ def get_main_menu():
         [KeyboardButton(text="🥦 Продукти (пошук)")],
         [KeyboardButton(text="📅 Записатись на консультацію")]
     ]
-    return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
-
+    return ReplyKeyboardMarkup(
+        keyboard=keyboard,
+        resize_keyboard=True,       # адаптує розмір кнопок
+        one_time_keyboard=False,    # кнопки залишаються завжди на екрані
+        input_field_placeholder="Оберіть опцію з меню 👇"  # текст підказки
+    )
+    
 def get_product_categories_keyboard():
     keyboard = [
         [KeyboardButton(text="🍞 Хлібобулочні вироби"), KeyboardButton(text="🥦 Овочі")],
