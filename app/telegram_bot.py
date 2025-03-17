@@ -53,11 +53,14 @@ async def cmd_categories(message: types.Message):
 @router.message(lambda msg: msg.text in CATEGORY_NAME_TO_ID.keys())
 async def ask_category(message: types.Message):
     category_id = CATEGORY_NAME_TO_ID[message.text]  # Отримуємо id категорії
+    msg = await message.reply("👀 Шукаю інформацію...")
     # Показуємо що "друкує"
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
-    query = f"Покажи всі продукти з категорії '{category_id}' відповідно до FODMAP."
+    query = f"Покажи всі продукти з категорії '{category_id}' з файлу categories.json."
 
     response = await ask_assistant(query)
+     # Видаляємо тимчасове повідомлення
+    await msg.delete()
 
     await message.answer(response)
 
