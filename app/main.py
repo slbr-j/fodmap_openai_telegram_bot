@@ -3,33 +3,34 @@ from aiogram import Bot, Dispatcher, types
 import logging
 import os
 
-# Налаштовуємо логер
+# Logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Keys from the environment
+# ENV variables
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 if not TELEGRAM_TOKEN:
-    logger.error("TELEGRAM_TOKEN is missing! Check your environment variables.")
+    logger.error("TELEGRAM_TOKEN not found! Check ENV.")
+    raise ValueError("TELEGRAM_TOKEN is missing!")
 
-# Ініціалізація бота та диспетчера
+# Initializing the bot and dispatcher
 bot = Bot(TELEGRAM_TOKEN)
 dp = Dispatcher()
 
-# Створюємо FastAPI
+# FastAPI application
 app = FastAPI()
 
-# Підключаємо router ДО webhook
+# Connecting aiogram routes
 from telegram_bot import router
 dp.include_router(router)
 
-
-# Webhook endpoint
+# Webhook for Telegram
 @app.post("/webhook")
 async def telegram_webhook(request: Request):
     try:
         update = types.Update(**await request.json())
+        logger.info(f"Received an update: {update}")
         await dp.feed_update(bot, update)
     except Exception as e:
         logger.error(f"Error in webhook: {e}")
