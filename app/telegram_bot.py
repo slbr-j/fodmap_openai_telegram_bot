@@ -93,7 +93,7 @@ async def show_product_info(message: types.Message, product=None):
         return
 
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
-    msg = await message.reply("👀 Шукаю інформацію...")
+    msg = await message.reply("👀 Пішов шукати...")
 
     # Формуємо відповідь про продукт
     text = (
@@ -132,7 +132,7 @@ async def ask_product_info(message: types.Message):
         return await show_product_info(message, product)
 
     # Якщо продукт не знайдений, йдемо до ассистента
-    msg = await message.reply("👀 Шукаю інформацію...")
+    msg = await message.reply("👀 Пішов шукати...")
 
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
