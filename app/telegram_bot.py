@@ -61,3 +61,42 @@ async def cmd_consultation(message: types.Message):
         "Або через телеграм бот клініки: https://t.me/vitamedicalBot\n\n"
         "Не консультую в Direct! Google 24/7 — go! 😉"
     )
+
+# Inline Query Handler for product search
+@router.inline_query()
+async def inline_query_handler(inline_query: types.InlineQuery):
+    """
+    Handles inline queries from the user.
+    User can type @your_bot_name <product> to search for product info.
+    """
+    # Get the user query from inline search input
+    query = inline_query.query.strip().lower()
+
+    # If no query, return empty result to avoid unnecessary processing
+    if not query:
+        return await inline_query.answer([], cache_time=1)
+
+    # Prepare prompt to send to OpenAI Assistant
+    prompt = (
+        f"Надай інформацію про продукт '{query}' згідно дієти Low-FODMAP. "
+        "Форматуй відповідь як завжди: статус, дози, пояснення, поради gastroкоуча Дарʼї Володимирівни."
+    )
+
+    # Get the assistant's response from Assistants API
+    response = await ask_assistant(prompt)
+
+    # Build the InlineQueryResultArticle to show in inline search
+    results = [
+        types.InlineQueryResultArticle(
+            id="1",  # Must be unique. If looping multiple results, use unique id.
+            title=f"Інформація про {query.capitalize()}",
+            description="Натисніть, щоб отримати інформацію про продукт",
+            input_message_content=types.InputTextMessageContent(
+                message_text=response  # What will be sent in chat on click
+            )
+        )
+    ]
+
+    # Answer the inline query with the prepared results
+    await inline_query.answer(results, cache_time=5)
+
