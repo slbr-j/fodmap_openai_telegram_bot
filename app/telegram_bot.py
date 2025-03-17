@@ -38,14 +38,18 @@ async def cmd_back_to_main_menu(message: types.Message):
 # КАТЕГОРІЇ
 @router.message(lambda msg: msg.text == "🍎 Категорії продуктів")
 async def cmd_categories(message: types.Message):
-    await message.answer("Оберіть категорію продуктів:", reply_markup=get_product_categories_keyboard())
+    await message.answer(
+        "Оберіть категорію продуктів 👇",
+        reply_markup=get_product_categories_keyboard()
+    )
 
-@router.message(lambda msg: msg.text in PRODUCT_CATEGORIES)
+# Обробка категорій за текстом кнопки
+@router.message(lambda msg: msg.text in PRODUCT_CATEGORIES.keys())
 async def ask_category(message: types.Message):
-    # Тут або робиш логіку обробки, або мапиш на id категорії
-    category_name = message.text
+    # Отримуємо значення з PRODUCT_CATEGORIES словника
+    category_key = PRODUCT_CATEGORIES[message.text]
 
-    query = f"Покажи всі продукти з категорії '{category_name}' відповідно до FODMAP."
+    query = f"Покажи всі продукти з категорії '{category_key}' відповідно до FODMAP."
 
     response = await ask_assistant(query)
 
