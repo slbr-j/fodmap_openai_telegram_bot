@@ -4,7 +4,8 @@ import time
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 ASSISTANT_ID = os.getenv("ASSISTANT_ID")
-
+if not openai_api_key or not assistant_id:
+    raise Exception("ENV variables OPENAI_API_KEY or ASSISTANT_ID not found!")
 
 async def ask_assistant(user_input):
     # Create a new thread for each user
