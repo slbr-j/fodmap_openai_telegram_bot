@@ -2,10 +2,16 @@ import openai
 import os
 import time
 
+logger = logging.getLogger(__name__)
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 ASSISTANT_ID = os.getenv("ASSISTANT_ID")
+
 if not openai_api_key or not assistant_id:
-    raise Exception("ENV variables OPENAI_API_KEY or ASSISTANT_ID not found!")
+    logger.error("ENV variables OPENAI_API_KEY or ASSISTANT_ID not found!")
+    raise ValueError("Missing API keys in environment variables!")
+
+openai.api_key = openai_api_key
 
 async def ask_assistant(user_input):
     # Create a new thread for each user
