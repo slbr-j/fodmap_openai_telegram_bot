@@ -1,7 +1,8 @@
 from aiogram import Router, types
 from aiogram.filters import Command
 from aiogram.enums import ChatAction
-from keyboards import get_main_menu, get_product_categories_keyboard, PRODUCT_CATEGORIES
+from keyboards import get_main_menu, get_product_categories_keyboard
+from data_loader import CATEGORY_NAME_TO_ID
 from assistants_api import ask_assistant
 
 router = Router()
@@ -45,12 +46,10 @@ async def cmd_categories(message: types.Message):
     )
 
 # Обробка категорій за текстом кнопки
-@router.message(lambda msg: msg.text in PRODUCT_CATEGORIES.keys())
+@router.message(lambda msg: msg.text in CATEGORY_NAME_TO_ID.keys())
 async def ask_category(message: types.Message):
-    # Отримуємо значення з PRODUCT_CATEGORIES словника
-    category_key = PRODUCT_CATEGORIES[message.text]
-
-    query = f"Покажи всі продукти з категорії '{category_key}' відповідно до FODMAP."
+    category_id = CATEGORY_NAME_TO_ID[message.text]  # Отримуємо id категорії
+    query = f"Покажи всі продукти з категорії '{category_id}' відповідно до FODMAP."
 
     response = await ask_assistant(query)
 
