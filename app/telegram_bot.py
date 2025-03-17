@@ -10,6 +10,8 @@ router = Router()
 # Старт / Головне меню
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
+    # Показуємо що "друкує"
+    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
     await message.answer(
         "Привіт! Я FODMAP асистент 👩🏻‍⚕️\n\nОберіть опцію з меню:",
         reply_markup=get_main_menu()
@@ -22,6 +24,8 @@ async def cmd_menu(message: types.Message):
 # ЗАПИС НА КОНСУЛЬТАЦІЮ
 @router.message(lambda msg: msg.text == "📅 Записатись на консультацію")
 async def cmd_consultation(message: types.Message):
+    # Показуємо що "друкує"
+    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
     await message.answer(
         "Дарʼя Володимирівна консультує в клініці Vita Medical.\n\n"
         "Запис через сайт: https://vitamedical.com.ua/\n"
@@ -49,6 +53,8 @@ async def cmd_categories(message: types.Message):
 @router.message(lambda msg: msg.text in CATEGORY_NAME_TO_ID.keys())
 async def ask_category(message: types.Message):
     category_id = CATEGORY_NAME_TO_ID[message.text]  # Отримуємо id категорії
+    # Показуємо що "друкує"
+    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
     query = f"Покажи всі продукти з категорії '{category_id}' відповідно до FODMAP."
 
     response = await ask_assistant(query)
