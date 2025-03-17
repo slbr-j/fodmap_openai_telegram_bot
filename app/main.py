@@ -19,7 +19,7 @@ async def telegram_webhook(request: Request):
         update = types.Update(**await request.json())
         await dp.feed_update(bot, update)
     except Exception as e:
-        logger.error(f"Помилка в webhook: {e}")
+        logger.error(f"Error in webhook: {e}")
         return {"ok": False}
     return {"ok": True}
 
