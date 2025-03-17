@@ -35,15 +35,13 @@ def get_product_categories_keyboard():
 
 def get_products_keyboard(category_id: str):
     """
-    Генерує клавіатуру з продуктами для певної категорії.
+    Генерує клавіатуру продуктів певної категорії.
     """
-    # Отримуємо всі продукти для обраної категорії
     products = get_products_by_category(category_id)
 
     if not products:
-        return None  # Немає продуктів у цій категорії
+        return None
 
-    # Створюємо кнопки (по дві в ряд)
     keyboard = []
     row = []
     for idx, product in enumerate(products, 1):
@@ -52,9 +50,9 @@ def get_products_keyboard(category_id: str):
             keyboard.append(row)
             row = []
     if row:
-        keyboard.append(row)  # Додаємо залишок
+        keyboard.append(row)
 
-    # Додаємо кнопку "Назад"
+    # Додаємо кнопку "Назад до категорій"
     keyboard.append([KeyboardButton(text="🔙 Назад до категорій")])
 
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
