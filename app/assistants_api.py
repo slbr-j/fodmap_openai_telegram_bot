@@ -20,19 +20,15 @@ async def ask_assistant(user_input):
     try:
         logger.info(f"Виклик асистента з текстом: {user_input}")
 
-        # Створюємо новий thread
         thread = openai.beta.threads.create()
-
         logger.info(f"Створено thread з ID: {thread.id}")
 
-        # Додаємо повідомлення користувача до thread
         openai.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
             content=user_input
         )
 
-        # Запускаємо асистента (створюємо run)
         run = openai.beta.threads.runs.create(
             thread_id=thread.id,
             assistant_id=assistant_id
@@ -40,8 +36,11 @@ async def ask_assistant(user_input):
 
         logger.info(f"Створено run з ID: {run.id}")
 
-        # Check the status of the run
-        while True:
+        # Очікуємо максимум 30 секунд (10 ітерацій по 3 сек)
+        max_attempts = 10
+        attempt = 0
+
+        while attempt < max_attempts:
             run_status = openai.beta.threads.runs.retrieve(
                 thread_id=thread.id,
                 run_id=run.id
@@ -51,16 +50,21 @@ async def ask_assistant(user_input):
 
             if run_status.status == "completed":
                 break
-            time.sleep(1)
 
-        # Receive a message from the assistant
+            attempt += 1
+            time.sleep(3)  # чекаємо 3 секунди між перевірками
+
+        else:
+            logger.error("Асистент обробляв запит занадто довго.")
+            return "Вибач, відповідь зайняла занадто багато часу. Спробуй ще раз пізніше."
+
         messages = openai.beta.threads.messages.list(thread_id=thread.id)
         reply = messages.data[0].content[0].text.value
 
-        logger.info(f"Assistant's response: {reply}")
+        logger.info(f"Відповідь асистента: {reply}")
 
         return reply
 
     except Exception as e:
-        logger.error(f"Error in ask_assistant: {e}")
+        logger.error(f"Помилка у ask_assistant: {e}")
         return "Вибач, сталася помилка. Спробуй ще раз пізніше!"
