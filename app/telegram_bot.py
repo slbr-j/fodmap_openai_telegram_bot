@@ -75,16 +75,25 @@ async def back_to_categories(message: types.Message):
         reply_markup=get_product_categories_keyboard()
     )
 
-@router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
-async def show_product_info(message: types.Message):
-    # Пошук продукту за ім'ям
-    product = next((p for p in PRODUCTS if p["name"] == message.text), None)
+def find_product_by_name(name: str):
+    """
+    Повертає продукт з PRODUCTS за його name.
+    Пошук нечутливий до регістру.
+    """
+    return next((p for p in PRODUCTS if p["name"].lower() == name.lower()), None)
 
+@router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
+async def show_product_info(message: types.Message, product=None):
+    # Пошук продукту за ім'ям
+    if not product:
+        product = find_product_by_name(message.text)
+    
     if not product:
         await message.answer("Продукт не знайдено 😢")
         return
 
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
+    msg = await message.reply("👀 Шукаю інформацію...")
 
     # Формуємо відповідь про продукт
     text = (
@@ -104,6 +113,8 @@ async def show_product_info(message: types.Message):
         f"👉 Лікую, а не лякаю 🫂"
     )
 
+    await msg.delete()
+
     await message.answer(text)
 
 # ПОШУК ПРОДУКТУ
@@ -116,10 +127,9 @@ async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
 
     # Перевіряємо, чи є продукт у PRODUCTS
-    product = next((p for p in PRODUCTS if p["name"].lower() == user_input.lower()), None)
-    
+    product = find_product_by_name(user_input)
     if product:
-        return await show_product_info(message)  # Використовуємо вже готовий хендлер
+        return await show_product_info(message, product)
 
     # Якщо продукт не знайдений, йдемо до ассистента
     msg = await message.reply("👀 Шукаю інформацію...")
