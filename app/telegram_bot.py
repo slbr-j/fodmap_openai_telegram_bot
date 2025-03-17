@@ -83,39 +83,46 @@ def find_product_by_name(name: str):
     return next((p for p in PRODUCTS if p["name"].lower() == name.lower()), None)
 
 @router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
-async def show_product_info(message: types.Message, product=None):
+async def show_product_info(message: types.Message):
     # Пошук продукту за ім'ям
-    if not product:
-        product = find_product_by_name(message.text)
-    
+    product = next((p for p in PRODUCTS if p["name"] == message.text), None)
+
     if not product:
         await message.answer("Продукт не знайдено 😢")
         return
 
-    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
     msg = await message.reply("👀 Пішов шукати...")
+
+    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
+
+    # Витягуємо дані доз
+    low_dose = product['doses']['low']
+    moderate_dose = product['doses']['moderate']
+    high_dose = product['doses']['high']
 
     # Формуємо відповідь про продукт
     text = (
-        f"{product['name']}\n"
+        f"📝 <b>{product['name']}</b>\n"
         f"Статус: {product['status']}\n\n"
-        f"🟢 Безпечна доза: {product['doses']['low']}\n"
-        f"🟡 Помірна доза: {product['doses']['moderate']}\n"
-        f"🔴 Небезпечна доза: {product['doses']['high']}\n\n"
-        f"FODMAP речовини:\n"
-        f"- Фруктоза: {product['fodmaps'].get('fructose', '❓')}\n"
-        f"- Лактоза: {product['fodmaps'].get('lactose', '❓')}\n"
-        f"- Манітол: {product['fodmaps'].get('mannitol', '❓')}\n"
-        f"- Сорбітол: {product['fodmaps'].get('sorbitol', '❓')}\n"
-        f"- ГЗК (GOS): {product['fodmaps'].get('gos', '❓')}\n"
-        f"- Фруктани: {product['fodmaps'].get('fructans', '❓')}\n\n"
+
+        f"🟢 <b>Безпечна доза</b>: {low_dose['amount']}\n"
+        f"{format_fodmaps(low_dose['fodmaps'])}\n\n"
+
+        f"🟡 <b>Помірна доза</b>: {moderate_dose['amount']}\n"
+        f"{format_fodmaps(moderate_dose['fodmaps'])}\n\n"
+
+        f"🔴 <b>Небезпечна доза</b>: {high_dose['amount']}\n"
+        f"{format_fodmaps(high_dose['fodmaps'])}\n\n"
+
         f"{product.get('comment', '')}\n\n"
+        f"❗️ Памʼятайте, що FODMAP речовини можуть накопичуватись при комбінації продуктів.\n\n"
         f"👉 Лікую, а не лякаю 🫂"
     )
 
     await msg.delete()
 
-    await message.answer(text)
+    await message.answer(text, parse_mode="HTML")
+
 
 # ПОШУК ПРОДУКТУ
 @router.message(lambda msg: msg.text == "🥦 Продукти (пошук)")
