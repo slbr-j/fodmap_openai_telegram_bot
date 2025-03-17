@@ -1,7 +1,7 @@
 from aiogram import Router, types
 from aiogram.filters import Command
 from aiogram.enums import ChatAction
-from keyboards import get_main_menu, get_product_categories_keyboard
+from keyboards import get_main_menu, get_product_categories_keyboard, get_products_keyboard
 from data_loader import CATEGORIES, CATEGORY_NAME_TO_ID, CATEGORY_ID_TO_NAME, PRODUCTS, get_products_by_category
 from assistants_api import ask_assistant
 
