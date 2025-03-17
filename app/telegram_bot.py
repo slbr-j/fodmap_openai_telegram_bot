@@ -1,6 +1,6 @@
 from aiogram import Router, types
 from aiogram.filters import Command
-from aiogram.types import ChatActions
+from aiogram.enums import ChatAction
 from keyboards import get_main_menu, get_product_categories_keyboard, PRODUCT_CATEGORIES
 from assistants_api import ask_assistant
 
@@ -66,7 +66,7 @@ async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
     msg = await message.reply("👀 Шукаю інформацію...")
     # Показуємо що "друкує"
-    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatActions.TYPING)
+    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
     # Готуємо запит до асистента
     query = f"Розкажи про продукт '{user_input}' згідно дієти Low-FODMAP. Використовуй дані з завантаженого файлу."
