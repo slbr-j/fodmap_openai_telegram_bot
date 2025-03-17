@@ -52,17 +52,59 @@ async def cmd_categories(message: types.Message):
 # Обробка категорій за текстом кнопки
 @router.message(lambda msg: msg.text in CATEGORY_NAME_TO_ID.keys())
 async def ask_category(message: types.Message):
-    category_id = CATEGORY_NAME_TO_ID[message.text]  # Отримуємо id категорії
-    msg = await message.reply("👀 Шукаю інформацію...")
-    # Показуємо що "друкує"
+    category_id = CATEGORY_NAME_TO_ID[message.text]
+    
+    # Додаємо індикатор, що бот "друкує"
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
-    query = f"Покажи всі продукти з категорії '{category_id}' з файлу categories.json."
 
-    response = await ask_assistant(query)
-     # Видаляємо тимчасове повідомлення
-    await msg.delete()
+    # Генеруємо клавіатуру продуктів цієї категорії
+    products_keyboard = get_products_keyboard(category_id)
 
-    await message.answer(response)
+    if products_keyboard:
+        await message.answer(
+            text=f"Оберіть продукт з категорії {message.text}:",
+            reply_markup=products_keyboard
+        )
+    else:
+        await message.answer("Нажаль, продукти цієї категорії не знайдені.")
+
+@router.message(lambda msg: msg.text == "🔙 Назад до категорій")
+async def back_to_categories(message: types.Message):
+    await message.answer(
+        "Оберіть категорію продуктів 👇",
+        reply_markup=get_product_categories_keyboard()
+    )
+
+@router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
+async def show_product_info(message: types.Message):
+    # Пошук продукту за ім'ям
+    product = next((p for p in PRODUCTS if p["name"] == message.text), None)
+
+    if not product:
+        await message.answer("Продукт не знайдено 😢")
+        return
+
+    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
+
+    # Формуємо відповідь про продукт
+    text = (
+        f"{product['name']}\n"
+        f"Статус: {product['status']}\n\n"
+        f"🟢 Безпечна доза: {product['doses']['low']}\n"
+        f"🟡 Помірна доза: {product['doses']['moderate']}\n"
+        f"🔴 Небезпечна доза: {product['doses']['high']}\n\n"
+        f"FODMAP речовини:\n"
+        f"- Фруктоза: {product['fodmaps'].get('fructose', '❓')}\n"
+        f"- Лактоза: {product['fodmaps'].get('lactose', '❓')}\n"
+        f"- Манітол: {product['fodmaps'].get('mannitol', '❓')}\n"
+        f"- Сорбітол: {product['fodmaps'].get('sorbitol', '❓')}\n"
+        f"- ГЗК (GOS): {product['fodmaps'].get('gos', '❓')}\n"
+        f"- Фруктани: {product['fodmaps'].get('fructans', '❓')}\n\n"
+        f"{product.get('comment', '')}\n\n"
+        f"👉 Лікую, а не лякаю 🫂"
+    )
+
+    await message.answer(text)
 
 # ПОШУК ПРОДУКТУ
 @router.message(lambda msg: msg.text == "🥦 Продукти (пошук)")
@@ -72,18 +114,21 @@ async def cmd_product_search(message: types.Message):
 @router.message()
 async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
+
+    # Перевіряємо, чи є продукт у PRODUCTS
+    product = next((p for p in PRODUCTS if p["name"].lower() == user_input.lower()), None)
+    
+    if product:
+        return await show_product_info(message)  # Використовуємо вже готовий хендлер
+
+    # Якщо продукт не знайдений, йдемо до ассистента
     msg = await message.reply("👀 Шукаю інформацію...")
-    # Показуємо що "друкує"
+
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
-    # Готуємо запит до асистента
     query = f"Розкажи про продукт '{user_input}' згідно дієти Low-FODMAP. Використовуй дані з завантаженого файлу."
 
-    # Викликаємо асистента
     response = await ask_assistant(query)
     
-    # Видаляємо тимчасове повідомлення
     await msg.delete()
-
-    # Відповідь користувачу
     await message.answer(response)
