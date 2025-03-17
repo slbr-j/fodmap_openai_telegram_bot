@@ -15,10 +15,13 @@ app = FastAPI()
 # Webhook
 @app.post("/webhook")
 async def telegram_webhook(request: Request):
-    update = types.Update(**await request.json())
-    await dp.feed_update(bot, update)
+    try:
+        update = types.Update(**await request.json())
+        await dp.feed_update(bot, update)
+    except Exception as e:
+        logger.error(f"Помилка в webhook: {e}")
+        return {"ok": False}
     return {"ok": True}
-
 
 # Connecting handlers
 import telegram_bot
