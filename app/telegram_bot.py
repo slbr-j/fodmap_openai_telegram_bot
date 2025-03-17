@@ -27,6 +27,14 @@ async def cmd_consultation(message: types.Message):
         "Не консультую в Direct! Google 24/7 — go! 😉"
     )
 
+# Назад до головного меню
+@router.message(lambda msg: msg.text == "🔙 Назад до головного меню")
+async def cmd_back_to_main_menu(message: types.Message):
+    await message.answer(
+        "Оберіть опцію з меню 👇",
+        reply_markup=get_main_menu()
+    )
+
 # КАТЕГОРІЇ
 @router.message(lambda msg: msg.text == "🍎 Категорії продуктів")
 async def cmd_categories(message: types.Message):
@@ -56,26 +64,11 @@ async def cmd_product_search(message: types.Message):
 async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
 
-    # List of static button responses that are already handled above
-    IGNORED_BUTTONS = [
-        "📅 Записатись на консультацію",
-        "📋 Головне меню",
-        "🍎 Категорії продуктів",
-        "🥦 Продукти (пошук)",
-        "🍓 Фрукти", "🥦 Овочі", "🥛 Молочні, безлактозні продукти",
-        "🍹 Напої", "🥜 Бобові, горіхи, тофу", "🥩 М'ясо, риба, яйця",
-        "🧈 Жири та масла", "🍪 Снеки, батончики, печиво",
-        "🍰 Кондитерські вироби, цукор", "🧂 Спеції, соуси", "🍞 Хлібобулочні вироби"
-    ]
-
-    # If message is in ignored buttons, do nothing (already handled)
-    if user_input in IGNORED_BUTTONS:
-        return
-
-    # Otherwise, send the query to OpenAI Assistant
+    # Готуємо запит до асистента
     query = f"Розкажи про продукт '{user_input}' згідно дієти Low-FODMAP. Використовуй дані з завантаженого файлу."
 
+    # Викликаємо асистента
     response = await ask_assistant(query)
 
+    # Відповідь користувачу
     await message.answer(response)
-
