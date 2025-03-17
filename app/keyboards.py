@@ -1,5 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-from app.data_loader import CATEGORIES
+from data_loader import CATEGORIES
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 def get_main_menu():
