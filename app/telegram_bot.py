@@ -63,6 +63,12 @@ async def cmd_product_search(message: types.Message):
 @router.message()
 async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
+    # Показуємо, що бот "друкує"
+    await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatActions.TYPING)
+
+    # Додаємо коротку затримку (ефект людської взаємодії, опційно)
+    import asyncio
+    await asyncio.sleep(1)
 
     # Готуємо запит до асистента
     query = f"Розкажи про продукт '{user_input}' згідно дієти Low-FODMAP. Використовуй дані з завантаженого файлу."
