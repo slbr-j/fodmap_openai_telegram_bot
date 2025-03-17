@@ -2,8 +2,8 @@ import json
 import os
 
 # --- FILE PATHS ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # app/data
-DATA_DIR = os.path.join(BASE_DIR)  # /app/data/
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # app/data_loader.py
+DATA_DIR = os.path.join(BASE_DIR, "data")  # app/data
 
 CATEGORIES_FILE = os.path.join(DATA_DIR, "categories.json")
 PRODUCTS_FILE = os.path.join(DATA_DIR, "products.json")
