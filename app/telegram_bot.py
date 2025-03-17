@@ -2,7 +2,7 @@ from aiogram import Router, types
 from aiogram.filters import Command
 from aiogram.enums import ChatAction
 from keyboards import get_main_menu, get_product_categories_keyboard
-from data_loader import CATEGORY_NAME_TO_ID
+from app.data_loader import CATEGORIES, CATEGORY_NAME_TO_ID
 from assistants_api import ask_assistant
 
 router = Router()
