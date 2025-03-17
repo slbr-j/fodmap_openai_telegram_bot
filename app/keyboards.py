@@ -1,5 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-from data_loader import CATEGORIES, PRODUCTS, get_products_by_category
+from data_loader import CATEGORIES, CATEGORY_ID_TO_NAME, PRODUCTS, get_products_by_category
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 def get_main_menu():
