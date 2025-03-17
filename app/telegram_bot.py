@@ -1,5 +1,6 @@
 from aiogram import Router, types
 from aiogram.filters import Command
+from aiogram.types import ChatActions
 from keyboards import get_main_menu, get_product_categories_keyboard, PRODUCT_CATEGORIES
 from assistants_api import ask_assistant
 
