@@ -1,6 +1,6 @@
 from aiogram import Router, types
 from aiogram.filters import Command
-from keyboards import get_main_menu, get_product_categories_keyboard
+from keyboards import get_main_menu, get_product_categories_keyboard, PRODUCT_CATEGORIES
 from assistants_api import ask_assistant
 
 router = Router()
@@ -40,17 +40,13 @@ async def cmd_back_to_main_menu(message: types.Message):
 async def cmd_categories(message: types.Message):
     await message.answer("Оберіть категорію продуктів:", reply_markup=get_product_categories_keyboard())
 
-@router.message(lambda msg: msg.text in [
-    "🍓 Фрукти", "🥦 Овочі", "🥛 Молочні, безлактозні продукти",
-    "🍹 Напої", "🥜 Бобові, горіхи, тофу", "🥩 М'ясо, риба, яйця",
-    "🧈 Жири та масла", "🍪 Снеки, батончики, печиво", "🍰 Кондитерські вироби, цукор",
-    "🧂 Спеції, соуси", "🍞 Хлібобулочні вироби"
-])
+@router.message(lambda msg: msg.text in PRODUCT_CATEGORIES)
 async def ask_category(message: types.Message):
-    category_name = message.text.replace("🍓 ", "").replace("🥦 ", "")  # прибираємо emoji
+    # Тут або робиш логіку обробки, або мапиш на id категорії
+    category_name = message.text
+
     query = f"Покажи всі продукти з категорії '{category_name}' відповідно до FODMAP."
 
-    # Асистент генерує відповідь на запит
     response = await ask_assistant(query)
 
     await message.answer(response)
