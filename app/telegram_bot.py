@@ -17,6 +17,16 @@ async def cmd_start(message: types.Message):
 async def cmd_menu(message: types.Message):
     await message.answer("Оберіть опцію з меню:", reply_markup=get_main_menu())
 
+# ЗАПИС НА КОНСУЛЬТАЦІЮ
+@router.message(lambda msg: msg.text == "📅 Записатись на консультацію")
+async def cmd_consultation(message: types.Message):
+    await message.answer(
+        "Дарʼя Володимирівна консультує в клініці Vita Medical.\n\n"
+        "Запис через сайт: https://vitamedical.com.ua/\n"
+        "Або через телеграм бот клініки: https://t.me/vitamedicalBot\n\n"
+        "Не консультую в Direct! Google 24/7 — go! 😉"
+    )
+
 # КАТЕГОРІЇ
 @router.message(lambda msg: msg.text == "🍎 Категорії продуктів")
 async def cmd_categories(message: types.Message):
@@ -69,13 +79,3 @@ async def ask_product_info(message: types.Message):
 
     await message.answer(response)
 
-
-# ЗАПИС НА КОНСУЛЬТАЦІЮ
-@router.message(lambda msg: msg.text == "📅 Записатись на консультацію")
-async def cmd_consultation(message: types.Message):
-    await message.answer(
-        "Дарʼя Володимирівна консультує в клініці Vita Medical.\n\n"
-        "Запис через сайт: https://vitamedical.com.ua/\n"
-        "Або через телеграм бот клініки: https://t.me/vitamedicalBot\n\n"
-        "Не консультую в Direct! Google 24/7 — go! 😉"
-    )
