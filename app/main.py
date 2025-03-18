@@ -1,5 +1,7 @@
 from fastapi import FastAPI, Request
 from aiogram import Bot, Dispatcher, types
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
 import logging
 import os
 
@@ -15,7 +17,11 @@ if not TELEGRAM_TOKEN:
     raise ValueError("TELEGRAM_TOKEN is missing!")
 
 # --- Init Bot and Dispatcher ---
-bot = Bot(TELEGRAM_TOKEN, parse_mode="HTML")  # УВАГА! parse_mode глобально
+bot = Bot(
+    token=TELEGRAM_TOKEN,
+    default=DefaultBotProperties(parse_mode=ParseMode.HTML)
+)
+
 dp = Dispatcher()
 
 # --- FastAPI app ---
