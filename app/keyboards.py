@@ -15,6 +15,17 @@ def get_main_menu():
         one_time_keyboard=False,    # кнопки залишаються завжди на екрані
         input_field_placeholder="Оберіть опцію з меню 👇"  # текст підказки
     )
+
+def get_fodmap_info_keyboard():
+    keyboard = [
+        [KeyboardButton(text="❓ Що таке FODMAP?")],
+        [KeyboardButton(text="📋 Етапи дієти Low-FODMAP")],
+        [KeyboardButton(text="🧐 Чому виникають симптоми?")],
+        [KeyboardButton(text="📅 Записатись на консультацію")],
+        [KeyboardButton(text="🔙 Назад до головного меню")]
+    ]
+    return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
+
     
 def get_product_categories_keyboard():
     keyboard_rows = []
