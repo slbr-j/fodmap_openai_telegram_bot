@@ -1,9 +1,20 @@
 from aiogram import Router, types
 from aiogram.filters import Command
 from aiogram.enums import ChatAction
-from keyboards import get_main_menu, get_product_categories_keyboard, get_products_keyboard
+from keyboards import get_main_menu, get_product_categories_keyboard, get_products_keyboardб get_fodmap_info_keyboard
 from data_loader import CATEGORIES, CATEGORY_NAME_TO_ID, CATEGORY_ID_TO_NAME, PRODUCTS, get_products_by_category
 from assistants_api import ask_assistant
+from keyboard_labels import (
+    BTN_CATEGORIES,
+    BTN_PRODUCT_SEARCH,
+    BTN_FODMAP_INFO,
+    BTN_BOOK_CONSULTATION,
+    BTN_BACK_TO_MAIN_MENU,
+    BTN_BACK_TO_CATEGORIES,
+    BTN_WHAT_IS_FODMAP,
+    BTN_DIET_STAGES,
+    BTN_SYMPTOMS_CAUSE
+)
 
 router = Router()
 
@@ -22,7 +33,7 @@ async def cmd_menu(message: types.Message):
     await message.answer("Оберіть опцію з меню:", reply_markup=get_main_menu())
 
 # ЗАПИС НА КОНСУЛЬТАЦІЮ
-@router.message(lambda msg: msg.text == "📅 Записатись на консультацію")
+@router.message(lambda msg: msg.text == BTN_BOOK_CONSULTATION)
 async def cmd_consultation(message: types.Message):
     # Показуємо що "друкує"
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
@@ -33,14 +44,14 @@ async def cmd_consultation(message: types.Message):
         "Не консультую в Direct! Google 24/7 — go! 😉"
     )
 # ABOUT FODMAP
-@router.message(lambda msg: msg.text == "🥗 Про FODMAP")
+@router.message(lambda msg: msg.text == BTN_FODMAP_INFO)
 async def cmd_fodmap_info(message: types.Message):
     await message.answer(
         "Оберіть, що вас цікавить 👇",
         reply_markup=get_fodmap_info_keyboard()
     )
 
-@router.message(lambda msg: msg.text == "❓ Що таке FODMAP?")
+@router.message(lambda msg: msg.text == BTN_WHAT_IS_FODMAP)
 async def explain_fodmap(message: types.Message):
     await message.answer(
         "🥦 **Що таке FODMAP?**\n\n"
@@ -54,7 +65,7 @@ async def explain_fodmap(message: types.Message):
         "👉 **Лікую, а не лякаю 🫂**"
     )
 
-@router.message(lambda msg: msg.text == "📋 Етапи дієти Low-FODMAP")
+@router.message(lambda msg: msg.text == BTN_DIET_STAGES)
 async def explain_diet_steps(message: types.Message):
     await message.answer(
         "📋 **Етапи дієти Low-FODMAP**\n\n"
@@ -67,7 +78,7 @@ async def explain_diet_steps(message: types.Message):
         "👉 **Лікую, а не лякаю 🫂**"
     )
 
-@router.message(lambda msg: msg.text == "🧐 Чому виникають симптоми?")
+@router.message(lambda msg: msg.text == BTN_SYMPTOMS_CAUSE)
 async def explain_symptoms(message: types.Message):
     await message.answer(
         "🧐 **Чому виникають симптоми?**\n\n"
@@ -83,7 +94,7 @@ async def explain_symptoms(message: types.Message):
 
 
 # Назад до головного меню
-@router.message(lambda msg: msg.text == "🔙 Назад до головного меню")
+@router.message(lambda msg: msg.text == BTN_BACK_TO_MAIN_MENU)
 async def cmd_back_to_main_menu(message: types.Message):
     await message.answer(
         "Оберіть опцію з меню 👇",
@@ -91,7 +102,7 @@ async def cmd_back_to_main_menu(message: types.Message):
     )
 
 # КАТЕГОРІЇ
-@router.message(lambda msg: msg.text == "🍎 Категорії продуктів")
+@router.message(lambda msg: msg.text == BTN_CATEGORIES)
 async def cmd_categories(message: types.Message):
     await message.answer(
         "Оберіть категорію продуктів 👇",
@@ -117,7 +128,7 @@ async def ask_category(message: types.Message):
     else:
         await message.answer("Нажаль, продукти цієї категорії не знайдені.")
 
-@router.message(lambda msg: msg.text == "🔙 Назад до категорій")
+@router.message(lambda msg: msg.text == BTN_BACK_TO_CATEGORIES)
 async def back_to_categories(message: types.Message):
     await message.answer(
         "Оберіть категорію продуктів 👇",
@@ -188,7 +199,7 @@ async def show_product_info(message: types.Message):
 
 
 # ПОШУК ПРОДУКТУ
-@router.message(lambda msg: msg.text == "🥦 Продукти (пошук)")
+@router.message(lambda msg: msg.text == BTN_PRODUCT_SEARCH)
 async def cmd_product_search(message: types.Message):
     await message.answer("Введіть назву продукту для пошуку 🧐")
 
