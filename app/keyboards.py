@@ -6,6 +6,7 @@ def get_main_menu():
     keyboard = [
         [KeyboardButton(text="🍎 Категорії продуктів")],
         [KeyboardButton(text="🥦 Продукти (пошук)")],
+        [KeyboardButton(text="🥗 Про Fodmap")]
         [KeyboardButton(text="📅 Записатись на консультацію")]
     ]
     return ReplyKeyboardMarkup(
