@@ -2,8 +2,7 @@ import openai
 import os
 import logging
 import asyncio
-from openai import RateLimitError, OpenAIError
-from openai._exceptions import Timeout
+from openai import RateLimitError, OpenAIError, APIConnectionError
 
 logger = logging.getLogger(__name__)
 
@@ -67,9 +66,11 @@ async def ask_assistant(user_input):
         return reply
 
     except RateLimitError:
+        logger.error("Перевищено ліміт запитів.")
         return "Вибач, забагато запитів до асистента. Спробуй трохи пізніше!"
-    except Timeout:
-        return "Асистент не відповів вчасно, спробуй знову!"
+    except APIConnectionError:
+        logger.error("Проблема з підключенням до OpenAI API.")
+        return "Асистент зараз недоступний (проблема з мережею). Спробуй пізніше!"
     except OpenAIError as e:
         logger.error(f"OpenAI API error: {e}")
         return "Щось пішло не так з OpenAI. Спробуй знову пізніше."
