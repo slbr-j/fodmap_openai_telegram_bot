@@ -15,7 +15,7 @@ if not openai_api_key or not assistant_id:
     logger.error("ENV variables OPENAI_API_KEY or ASSISTANT_ID not found!")
     raise ValueError("There are no environment variables for the OpenAI API.")
 
-# Assigning a key to openai client
+# Create OpenAI client
 client = openai.OpenAI(api_key=openai_api_key)
 
 
