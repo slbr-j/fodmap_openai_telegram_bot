@@ -40,6 +40,7 @@ class SearchState(StatesGroup):
     waiting_for_product_name = State()
 
 
+# --- Consultation Keywords ---
 BOOKING_KEYWORDS = [
     r"\bзапис(атись|атися)?\b",
     r"\bконсультац(ія|ії|ію|іями)?\b",
@@ -50,6 +51,7 @@ BOOKING_KEYWORDS = [
 ]
 
 
+# --- Auto Consultation Handler ---
 @router.message(
     lambda msg: any(
         re.search(pattern, msg.text.lower()) for pattern in BOOKING_KEYWORDS
@@ -66,6 +68,7 @@ async def auto_consultation(message: types.Message):
     )
 
 
+# --- Start Command Handler ---
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
     await message.bot.send_chat_action(
@@ -77,16 +80,17 @@ async def cmd_start(message: types.Message):
     )
 
 
+# --- Back to Main Menu Handler ---
 @router.message(F.text == BTN_BACK_TO_MAIN_MENU)
 async def cmd_back_to_main_menu(message: types.Message):
     await message.answer("Оберіть опцію з меню:", reply_markup=get_main_menu())
 
 
-# --- КАТЕГОРІЇ ---
+# --- Categories Handlers ---
 @router.message(F.text == BTN_CATEGORIES)
 async def cmd_categories(message: types.Message):
     await message.answer(
-        "Оберіть категорію продуктів 👇", reply_markup=get_product_categories_keyboard()
+        "Оберіть категорію продуктів:", reply_markup=get_product_categories_keyboard()
     )
 
 
@@ -107,11 +111,11 @@ async def ask_category(message: types.Message):
 @router.message(F.text == BTN_BACK_TO_CATEGORIES)
 async def back_to_categories(message: types.Message):
     await message.answer(
-        "Оберіть категорію продуктів 👇", reply_markup=get_product_categories_keyboard()
+        "Оберіть категорію продуктів:", reply_markup=get_product_categories_keyboard()
     )
 
 
-# --- ПРОДУКТИ LOW/HIGH ---
+# --- Low/High FODMAP Products Handlers ---
 @router.message(Command("fodmap_products"))
 async def cmd_fodmap_products(message: types.Message):
     await show_low_high_fodmap_products(message)
@@ -141,11 +145,11 @@ async def show_low_high_fodmap_products(message: types.Message):
     await message.answer(text)
 
 
-# --- INFO ---
+# --- FODMAP Info Handlers ---
 @router.message(F.text == BTN_FODMAP_INFO)
 async def cmd_fodmap_info(message: types.Message):
     await message.answer(
-        "Оберіть, що вас цікавить 👇", reply_markup=get_fodmap_info_keyboard()
+        "Оберіть, що вас цікавить:", reply_markup=get_fodmap_info_keyboard()
     )
 
 
@@ -170,6 +174,7 @@ async def explain_symptoms(message: types.Message):
     )
 
 
+# --- Handle Category Product Click ---
 @router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
 async def handle_category_product(message: types.Message):
     product = find_product_by_name(message.text)
@@ -177,11 +182,10 @@ async def handle_category_product(message: types.Message):
     if product:
         await show_product_details(message, product)
     else:
-        # Цього не мало би бути, але про всяк випадок
         await message.answer("Продукт не знайдено 😢")
 
 
-# --- ПОШУК ПРОДУКТУ ---
+# --- Product Search FSM ---
 @router.message(F.text == BTN_PRODUCT_SEARCH)
 async def cmd_product_search(message: types.Message, state: FSMContext):
     await state.set_state(SearchState.waiting_for_product_name)
@@ -190,17 +194,62 @@ async def cmd_product_search(message: types.Message, state: FSMContext):
 
 @router.message(SearchState.waiting_for_product_name)
 async def search_product_by_text(message: types.Message, state: FSMContext):
-    user_input = message.text.strip()
-    product = find_product_by_name(user_input) or find_product_by_name_fuzzy(user_input)
+    user_input = message.text.strip().lower()
+
+    matching_products = [p for p in PRODUCTS if user_input in p["name"].lower()]
+
+    if len(matching_products) > 1:
+        keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        for product in matching_products:
+            keyboard.add(types.KeyboardButton(text=product["name"]))
+
+        keyboard.add(types.KeyboardButton(text=BTN_BACK_TO_MAIN_MENU))
+
+        await message.answer(
+            f"Знайдено кілька продуктів, що містять '{user_input}':",
+            reply_markup=keyboard,
+        )
+        await state.clear()
+        return
+
+    if len(matching_products) == 1:
+        await show_product_details(message, matching_products[0])
+        await state.clear()
+        return
+
+    product = find_product_by_name_fuzzy(user_input)
 
     if product:
         await show_product_details(message, product)
-    else:
-        await message.answer("Продукт не знайдено 😢 Спробуйте інший запит!")
+        await state.clear()
+        return
+
+    msg = await message.reply("👀 Пішов шукати...")
+    await message.bot.send_chat_action(
+        chat_id=message.chat.id, action=ChatAction.TYPING
+    )
+
+    product_names = [p["name"] for p in PRODUCTS]
+    context = (
+        "У мене є список продуктів на дієті Low-FODMAP: "
+        + ", ".join(product_names)
+        + ". Якщо продукту немає в списку, дай загальну відповідь згідно протоколу Low-FODMAP."
+    )
+
+    query = (
+        f"{context}\n\nКористувач питає про продукт '{user_input}'. "
+        "Відповідь має бути відповідно до правил дієти Low-FODMAP, "
+        "на основі перевірених джерел Дарʼї Володимирівни."
+    )
+
+    response = await ask_assistant(query)
+
+    await msg.delete()
+    await message.answer(response)
     await state.clear()
 
 
-# --- fallback + ASSISTANT ---
+# --- Fallback Handler ---
 @router.message()
 async def fallback_to_assistant(message: types.Message):
     user_input = message.text.strip()
@@ -224,7 +273,7 @@ async def fallback_to_assistant(message: types.Message):
     await message.answer(response)
 
 
-# --- HELPERS ---
+# --- Helper Functions ---
 def find_product_by_name(name: str):
     return next((p for p in PRODUCTS if p["name"].lower() == name.lower()), None)
 
