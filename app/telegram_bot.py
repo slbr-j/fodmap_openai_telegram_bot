@@ -28,6 +28,7 @@ from keyboard_labels import (
     BTN_DIET_STAGES,
     BTN_SYMPTOMS_CAUSE,
 )
+from rapidfuzz import process, fuzz
 
 router = Router()
 
@@ -73,7 +74,6 @@ async def cmd_menu(message: types.Message):
     await message.answer("Оберіть опцію з меню:", reply_markup=get_main_menu())
 
 
-# BOOKING
 @router.message(lambda msg: msg.text == BTN_BOOK_CONSULTATION)
 async def cmd_consultation(message: types.Message):
     await message.bot.send_chat_action(
@@ -116,113 +116,17 @@ async def show_low_high_fodmap_products(message: types.Message):
     await message.answer(text)
 
 
-# ABOUT FODMAP
-@router.message(lambda msg: msg.text == BTN_FODMAP_INFO)
-async def cmd_fodmap_info(message: types.Message):
-    await message.answer(
-        "Оберіть, що вас цікавить 👇", reply_markup=get_fodmap_info_keyboard()
-    )
-
-
-@router.message(lambda msg: msg.text == BTN_WHAT_IS_FODMAP)
-async def explain_fodmap(message: types.Message):
-    await message.answer(
-        "🥦 <b>Що таке FODMAP?</b>\n\n"
-        "Це група коротколанцюгових вуглеводів, які погано засвоюються в тонкому кишечнику. "
-        "Вони бродять під дією кишкових бактерій 🦠, виділяючи гази, і притягують воду 💧, "
-        "що викликає здуття живота, біль і діарею.\n\n"
-        "<b>FODMAP</b> — це абревіатура від:\n\n"
-        "• <b>F</b>ermentable — Ферментовані\n"
-        "• <b>O</b>ligosaccharides — Олігосахариди (фруктани, ГЗК)\n"
-        "• <b>D</b>isaccharides — Дисахариди (лактоза)\n"
-        "• <b>M</b>onosaccharides — Монозахариди (фруктоза)\n"
-        "• <b>A</b>nd — та\n"
-        "• <b>P</b>olyols — Поліоли (сорбітол, манітол)\n\n"
-        "Ця дієта була спеціально розроблена для полегшення симптомів при Синдромі подразненого кишківника (IBS).\n\n"
-        "<b>До FODMAP належать:</b>\n\n"
-        "🍯 <b>Фруктоза</b> — мед, деякі фрукти\n"
-        "🥛 <b>Лактоза</b> — молочні продукти\n"
-        "🍬 <b>Поліоли</b> — сорбітол, манітол\n"
-        "🧄 <b>Фруктани та ГЗК</b> — цибуля, часник, бобові\n\n"
-        "👉 <b>Лікую, а не лякаю 🫂</b>"
-    )
-
-
-@router.message(lambda msg: msg.text == BTN_DIET_STAGES)
-async def explain_diet_steps(message: types.Message):
-    await message.answer(
-        "📋 <b>Етапи дієти Low-FODMAP</b>\n\n"
-        "1️⃣ <b>Елімінація (2-6 тижнів):</b>\n"
-        "Повне виключення продуктів з високим вмістом FODMAP. "
-        "Цей етап допомагає зменшити симптоми й дати кишківнику відпочити.\n\n"
-        "2️⃣ <b>Реінтродукція (6-8 тижнів):</b>\n"
-        "Поступове введення продуктів по одному, щоб виявити, які з них викликають реакцію. "
-        "Важливо спостерігати за симптомами та вести харчовий щоденник 📝.\n\n"
-        "3️⃣ <b>Персоналізація:</b>\n"
-        "Після аналізу результатів попереднього етапу, формується індивідуальний раціон, "
-        "який уникає тільки проблемних продуктів.\n\n"
-        "👩🏻‍⚕️ Рекомендую проходити ці етапи під наглядом гастроентеролога або дієтолога!\n\n"
-        "👉 <b>Лікую, а не лякаю 🫂</b>"
-    )
-
-
-@router.message(lambda msg: msg.text == BTN_SYMPTOMS_CAUSE)
-async def explain_symptoms(message: types.Message):
-    await message.answer(
-        "🧐 <b>Чому виникають симптоми?</b>\n\n"
-        "FODMAP притягують воду в кишківник 💧 та ферментуються бактеріями 🦠, що спричиняє:\n\n"
-        "🔹 здуття 🎈\n"
-        "🔹 біль 🥴\n"
-        "🔹 діарею 🚽\n\n"
-        "Особливо це актуально для людей із синдромом подразненого кишечника (IBS).\n\n"
-        "👉 <b>Лікую, а не лякаю 🫂</b>"
-    )
-
-
-# Назад до головного меню
-@router.message(lambda msg: msg.text == BTN_BACK_TO_MAIN_MENU)
-async def cmd_back_to_main_menu(message: types.Message):
-    await message.answer("Оберіть опцію з меню 👇", reply_markup=get_main_menu())
-
-
-# КАТЕГОРІЇ
-@router.message(lambda msg: msg.text == BTN_CATEGORIES)
-async def cmd_categories(message: types.Message):
-    await message.answer(
-        "Оберіть категорію продуктів 👇", reply_markup=get_product_categories_keyboard()
-    )
-
-
-# Обробка категорій за текстом кнопки
-@router.message(lambda msg: msg.text in CATEGORY_NAME_TO_ID.keys())
-async def ask_category(message: types.Message):
-    category_id = CATEGORY_NAME_TO_ID[message.text]
-
-    await message.bot.send_chat_action(
-        chat_id=message.chat.id, action=ChatAction.TYPING
-    )
-
-    products_keyboard = get_products_keyboard(category_id)
-
-    if products_keyboard:
-        await message.answer(
-            text=f"Оберіть продукт з категорії {message.text}:",
-            reply_markup=products_keyboard,
-        )
-    else:
-        await message.answer("Нажаль, продукти цієї категорії не знайдені.")
-
-
-@router.message(lambda msg: msg.text == BTN_BACK_TO_CATEGORIES)
-async def back_to_categories(message: types.Message):
-    await message.answer(
-        "Оберіть категорію продуктів 👇", reply_markup=get_product_categories_keyboard()
-    )
-
-
-# Пошук продукту
 def find_product_by_name(name: str):
     return next((p for p in PRODUCTS if p["name"].lower() == name.lower()), None)
+
+
+def find_product_by_name_fuzzy(name: str, threshold: int = 80):
+    product_names = [p["name"] for p in PRODUCTS]
+    match = process.extractOne(name, product_names, scorer=fuzz.WRatio)
+
+    if match and match[1] >= threshold:
+        return next((p for p in PRODUCTS if p["name"] == match[0]), None)
+    return None
 
 
 def format_fodmaps(fodmaps: dict) -> str:
@@ -236,87 +140,48 @@ def format_fodmaps(fodmaps: dict) -> str:
     )
 
 
-@router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
-async def show_product_info(message: types.Message):
-    product = find_product_by_name(message.text)
-
-    if not product:
-        await message.answer("Продукт не знайдено 😢")
-        return
-
-    msg = await message.reply("👀 Пішов шукати...")
-
-    await message.bot.send_chat_action(
-        chat_id=message.chat.id, action=ChatAction.TYPING
-    )
-
-    low_dose = product["doses"]["low"]
-    moderate_dose = product["doses"]["moderate"]
-    high_dose = product["doses"]["high"]
-
-    text = (
-        f"📝 <b>{product['name']}</b>\n"
-        f"Статус: {product['status']}\n\n"
-        f"🟢 <b>Безпечна доза</b>: {low_dose['amount']}\n"
-        f"{format_fodmaps(low_dose['fodmaps'])}\n\n"
-        f"🟡 <b>Помірна доза</b>: {moderate_dose['amount']}\n"
-        f"{format_fodmaps(moderate_dose['fodmaps'])}\n\n"
-        f"🔴 <b>Небезпечна доза</b>: {high_dose['amount']}\n"
-        f"{format_fodmaps(high_dose['fodmaps'])}\n\n"
-        f"{product.get('comment', '')}\n\n"
-        f"❗️ Памʼятайте, що FODMAP речовини можуть накопичуватись при комбінації продуктів.\n\n"
-        f"👉 Лікую, а не лякаю 🫂"
-    )
-
-    await msg.delete()
-    await message.answer(text)
-
-
-# ПОШУК ПРОДУКТУ
-@router.message(lambda msg: msg.text == BTN_PRODUCT_SEARCH)
-async def cmd_product_search(message: types.Message):
-    await message.answer("Введіть назву продукту для пошуку 🧐")
-
-
-from rapidfuzz import process, fuzz
-
-
-def find_product_by_name_fuzzy(name: str, threshold: int = 80):
-    """Fuzzy search for product name"""
-    product_names = [p["name"] for p in PRODUCTS]
-
-    # extractOne returns (name, score, index)
-    match = process.extractOne(name, product_names, scorer=fuzz.WRatio)
-
-    if match and match[1] >= threshold:
-        # Повертаємо продукт за знайденою назвою
-        return next((p for p in PRODUCTS if p["name"] == match[0]), None)
-
-    return None
-
-
 @router.message()
 async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
 
-    # 1. Пошук точного збігу в products.json
     product = find_product_by_name(user_input)
 
-    # 2. Якщо немає ➡️ Fuzzy пошук
     if not product:
         product = find_product_by_name_fuzzy(user_input)
 
-    # 3. Якщо знайшли продукт ➡️ показуємо інфу
     if product:
-        return await show_product_info(message)
+        msg = await message.reply("👀 Пішов шукати...")
 
-    # 4. Якщо нічого не знайшли ➡️ звертаємось до асистента OpenAI
+        await message.bot.send_chat_action(
+            chat_id=message.chat.id, action=ChatAction.TYPING
+        )
+
+        low_dose = product["doses"]["low"]
+        moderate_dose = product["doses"]["moderate"]
+        high_dose = product["doses"]["high"]
+
+        text = (
+            f"📝 <b>{product['name']}</b>\n"
+            f"Статус: {product['status']}\n\n"
+            f"🟢 <b>Безпечна доза</b>: {low_dose['amount']}\n"
+            f"{format_fodmaps(low_dose['fodmaps'])}\n\n"
+            f"🟡 <b>Помірна доза</b>: {moderate_dose['amount']}\n"
+            f"{format_fodmaps(moderate_dose['fodmaps'])}\n\n"
+            f"🔴 <b>Небезпечна доза</b>: {high_dose['amount']}\n"
+            f"{format_fodmaps(high_dose['fodmaps'])}\n\n"
+            f"{product.get('comment', '')}\n\n"
+            f"❗️ Памʼятайте, що FODMAP речовини можуть накопичуватись при комбінації продуктів.\n\n"
+            f"👉 Лікую, а не лякаю 🫂"
+        )
+
+        await msg.delete()
+        return await message.answer(text)
+
     msg = await message.reply("👀 Пішов шукати...")
     await message.bot.send_chat_action(
         chat_id=message.chat.id, action=ChatAction.TYPING
     )
 
-    # Підготовка контексту з твоїм списком продуктів
     product_names = [p["name"] for p in PRODUCTS]
     context = (
         "У мене є список продуктів на дієті Low-FODMAP: "
