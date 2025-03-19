@@ -1,465 +1,475 @@
 [
-  {
-    "id": "prod_001",
-    "name": "Авокадо",
-    "category_id": "fruits",
-    "status": "Low-FODMAP у малих кількостях",
-    "doses": {
-      "low": {
-        "amount": "30г (1/4 плода)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟡",
-          "sorbitol": "🟡",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "moderate": {
-        "amount": "60г (1/2 плода)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🔴",
-          "sorbitol": "🔴",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "90г (3/4 плода)",
-        "fodmaps": {
-          "fructose": "🔴",
-          "lactose": "🟢",
-          "mannitol": "🔴",
-          "sorbitol": "🔴",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
+    {
+        "id": "prod_001",
+        "name": "Авокадо",
+        "category_id": "fruits",
+        "status": "Low-FODMAP у малих кількостях",
+        "doses": {
+            "low": {
+                "amount": "30г (1/4 плода)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟡",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "60г (1/2 плода)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🔴",
+                    "sorbitol": "🔴",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "90г (3/4 плода)",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🔴",
+                    "sorbitol": "🔴",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Авокадо містить сорбітол, тому великі дози можуть викликати симптоми.",
+        "overall_fodmap_level": "low"
     },
-    "comment": "Авокадо містить сорбітол, тому великі дози можуть викликати симптоми."
-  },
-  {
-    "id": "prod_002",
-    "name": "Цибуля ріпчаста",
-    "category_id": "vegetables",
-    "status": "High-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "10г",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟡",
-          "fructans": "🟡"
-        }
-      },
-      "moderate": {
-        "amount": "30г",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🔴",
-          "fructans": "🔴"
-        }
-      },
-      "high": {
-        "amount": "50г і більше",
-        "fodmaps": {
-          "fructose": "🔴",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🔴",
-          "fructans": "🔴"
-        }
-      }
+    {
+        "id": "prod_002",
+        "name": "Цибуля ріпчаста",
+        "category_id": "vegetables",
+        "status": "High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "10г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🟡"
+                }
+            },
+            "moderate": {
+                "amount": "30г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            },
+            "high": {
+                "amount": "50г і більше",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "Містить фруктани, особливо у сирому вигляді.",
+        "overall_fodmap_level": "high"
     },
-    "comment": "Містить фруктани, особливо у сирому вигляді."
-  },
-  {
-    "id": "prod_003",
-    "name": "Молоко коровʼяче",
-    "category_id": "dairy",
-    "status": "High-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "10мл",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟡",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "moderate": {
-        "amount": "50мл",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🔴",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "100мл і більше",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🔴",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
+    {
+        "id": "prod_003",
+        "name": "Молоко коровʼяче",
+        "category_id": "dairy",
+        "status": "High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "10мл",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟡",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "50мл",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🔴",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "100мл і більше",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🔴",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Високий вміст лактози. Обирайте безлактозні альтернативи.",
+        "overall_fodmap_level": "high"
     },
-    "comment": "Високий вміст лактози. Обирайте безлактозні альтернативи."
-  },
-  {
-    "id": "prod_004",
-    "name": "Часник (сирий)",
-    "category_id": "spices",
-    "status": "High-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "5г",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟡",
-          "fructans": "🟡"
-        }
-      },
-      "moderate": {
-        "amount": "10г",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🔴",
-          "fructans": "🔴"
-        }
-      },
-      "high": {
-        "amount": "15г і більше",
-        "fodmaps": {
-          "fructose": "🔴",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🔴",
-          "fructans": "🔴"
-        }
-      }
+    {
+        "id": "prod_004",
+        "name": "Часник (сирий)",
+        "category_id": "spices",
+        "status": "High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "5г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🟡"
+                }
+            },
+            "moderate": {
+                "amount": "10г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            },
+            "high": {
+                "amount": "15г і більше",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "Використовуйте часникову олію, щоб уникнути симптомів.",
+        "overall_fodmap_level": "high"
     },
-    "comment": "Використовуйте часникову олію, щоб уникнути симптомів."
-  },
-  {
-    "id": "prod_005",
-    "name": "Чіа батончик",
-    "category_id": "snacks",
-    "status": "Low-FODMAP у малих кількостях",
-    "doses": {
-      "low": {
-        "amount": "20г",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟡",
-          "gos": "🟢",
-          "fructans": "🟡"
-        }
-      },
-      "moderate": {
-        "amount": "50г",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🟡",
-          "sorbitol": "🔴",
-          "gos": "🟡",
-          "fructans": "🔴"
-        }
-      },
-      "high": {
-        "amount": "75г",
-        "fodmaps": {
-          "fructose": "🔴",
-          "lactose": "🟢",
-          "mannitol": "🔴",
-          "sorbitol": "🔴",
-          "gos": "🔴",
-          "fructans": "🔴"
-        }
-      }
+    {
+        "id": "prod_005",
+        "name": "Чіа батончик",
+        "category_id": "snacks",
+        "status": "Low-FODMAP у малих кількостях",
+        "doses": {
+            "low": {
+                "amount": "20г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "moderate": {
+                "amount": "50г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟡",
+                    "sorbitol": "🔴",
+                    "gos": "🟡",
+                    "fructans": "🔴"
+                }
+            },
+            "high": {
+                "amount": "75г",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🔴",
+                    "sorbitol": "🔴",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "Часто містить поліоли та додану фруктозу.",
+        "overall_fodmap_level": "low"
     },
-    "comment": "Часто містить поліоли та додану фруктозу."
-  },
-  {
-    "id": "prod_006",
-    "name": "Вода з лимоном",
-    "category_id": "drinks",
-    "status": "Low-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "150мл",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "moderate": {
-        "amount": "300мл",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "500мл",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟡",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
+    {
+        "id": "prod_006",
+        "name": "Вода з лимоном",
+        "category_id": "drinks",
+        "status": "Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "150мл",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "300мл",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "500мл",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Безпечний напій, але в надлишку може викликати дискомфорт.",
+        "overall_fodmap_level": "low"
     },
-    "comment": "Безпечний напій, але в надлишку може викликати дискомфорт."
-  },
-  {
-    "id": "prod_007",
-    "name": "Куряче філе",
-    "category_id": "meat",
-    "status": "Low-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "100г",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "moderate": {
-        "amount": "200г",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "300г",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
+    {
+        "id": "prod_007",
+        "name": "Куряче філе",
+        "category_id": "meat",
+        "status": "Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "100г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "200г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "300г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Немає FODMAP, головне — стежити за приправами.",
+        "overall_fodmap_level": "low"
     },
-    "comment": "Немає FODMAP, головне — стежити за приправами."
-  },
-  {
-    "id": "prod_008",
-    "name": "Безглютеновий хліб",
-    "category_id": "bakery",
-    "status": "Low-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "35г (1 скибка)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟡"
-        }
-      },
-      "moderate": {
-        "amount": "70г (2 скибки)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🔴"
-        }
-      },
-      "high": {
-        "amount": "105г (3 скибки)",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟡",
-          "fructans": "🔴"
-        }
-      }
+    {
+        "id": "prod_008",
+        "name": "Безглютеновий хліб",
+        "category_id": "bakery",
+        "status": "Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "35г (1 скибка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "moderate": {
+                "amount": "70г (2 скибки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            },
+            "high": {
+                "amount": "105г (3 скибки)",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "Обирайте хліб без додавання фруктанів (лук/часник).",
+        "overall_fodmap_level": "low"
     },
-    "comment": "Обирайте хліб без додавання фруктанів (лук/часник)."
-  },
-  {
-    "id": "prod_009",
-    "name": "Тоффу твердий",
-    "category_id": "legumes",
-    "status": "Low-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "100г",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟡",
-          "fructans": "🟢"
-        }
-      },
-      "moderate": {
-        "amount": "150г",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟡",
-          "sorbitol": "🟢",
-          "gos": "🔴",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "200г",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🔴",
-          "sorbitol": "🟢",
-          "gos": "🔴",
-          "fructans": "🟢"
-        }
-      }
+    {
+        "id": "prod_009",
+        "name": "Тоффу твердий",
+        "category_id": "legumes",
+        "status": "Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "100г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "150г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟡",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "200г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🔴",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Твердий тофу краще переноситься, ніж мʼякий.",
+        "overall_fodmap_level": "low"
     },
-    "comment": "Твердий тофу краще переноситься, ніж мʼякий."
-  },
-  {
-    "id": "prod_010",
-    "name": "Темний шоколад (85%)",
-    "category_id": "sweets",
-    "status": "Low-FODMAP у помірних дозах",
-    "doses": {
-      "low": {
-        "amount": "20г (2 квадратика)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟡",
-          "mannitol": "🟢",
-          "sorbitol": "🟡",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "moderate": {
-        "amount": "40г",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🔴",
-          "mannitol": "🟢",
-          "sorbitol": "🔴",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "60г",
-        "fodmaps": {
-          "fructose": "🔴",
-          "lactose": "🔴",
-          "mannitol": "🟡",
-          "sorbitol": "🔴",
-          "gos": "🟢",
-          "fructans": "🟡"
-        }
-      }
+    {
+        "id": "prod_010",
+        "name": "Темний шоколад (85%)",
+        "category_id": "sweets",
+        "status": "Low-FODMAP у помірних дозах",
+        "doses": {
+            "low": {
+                "amount": "20г (2 квадратика)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟡",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "40г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🔴",
+                    "mannitol": "🟢",
+                    "sorbitol": "🔴",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "60г",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🔴",
+                    "mannitol": "🟡",
+                    "sorbitol": "🔴",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            }
+        },
+        "comment": "Темний шоколад містить поліоли — важливо контролювати кількість!",
+        "overall_fodmap_level": "low"
     },
-    "comment": "Темний шоколад містить поліоли — важливо контролювати кількість!"
-  },
-  {
-  "id": "prod_011",
-  "name": "Оливкова олія Extra Virgin",
-  "category_id": "fats",
-  "status": "Low-FODMAP",
-  "doses": {
-    "low": {
-      "amount": "5г (1 чайна ложка)",
-      "fodmaps": {
-        "fructose": "🟢",
-        "lactose": "🟢",
-        "mannitol": "🟢",
-        "sorbitol": "🟢",
-        "gos": "🟢",
-        "fructans": "🟢"
-      }
-    },
-    "moderate": {
-      "amount": "15г (1 столова ложка)",
-      "fodmaps": {
-        "fructose": "🟢",
-        "lactose": "🟢",
-        "mannitol": "🟢",
-        "sorbitol": "🟢",
-        "gos": "🟢",
-        "fructans": "🟢"
-      }
-    },
-    "high": {
-      "amount": "30г (2 столові ложки)",
-      "fodmaps": {
-        "fructose": "🟢",
-        "lactose": "🟢",
-        "mannitol": "🟢",
-        "sorbitol": "🟢",
-        "gos": "🟢",
-        "fructans": "🟢"
-      }
+    {
+        "id": "prod_011",
+        "name": "Оливкова олія Extra Virgin",
+        "category_id": "fats",
+        "status": "Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "5г (1 чайна ложка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "15г (1 столова ложка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "30г (2 столові ложки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Оливкова олія не містить FODMAP-компонентів. Використовуйте в салатах або для смаження. Може сприяти здоров’ю кишечника завдяки антиоксидантам!",
+        "overall_fodmap_level": "low"
     }
-  },
-  "comment": "Оливкова олія не містить FODMAP-компонентів. Використовуйте в салатах або для смаження. Може сприяти здоров’ю кишечника завдяки антиоксидантам!"
-}
-
 ]
