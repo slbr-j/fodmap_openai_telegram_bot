@@ -17,10 +17,7 @@ if not TELEGRAM_TOKEN:
     raise ValueError("TELEGRAM_TOKEN is missing!")
 
 # --- Init Bot and Dispatcher ---
-bot = Bot(
-    token=TELEGRAM_TOKEN,
-    default=DefaultBotProperties(parse_mode=ParseMode.HTML)
-)
+bot = Bot(token=TELEGRAM_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
 dp = Dispatcher()
 
@@ -29,7 +26,9 @@ app = FastAPI()
 
 # --- Routers ---
 from telegram_bot import router
+
 dp.include_router(router)
+
 
 # --- Webhook endpoint ---
 @app.post("/webhook")

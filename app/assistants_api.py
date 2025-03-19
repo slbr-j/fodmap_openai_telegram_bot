@@ -16,6 +16,7 @@ if not openai_api_key or not assistant_id:
 # Assigning a key to openai
 openai.api_key = openai_api_key
 
+
 async def ask_assistant(user_input):
     try:
         logger.info(f"Виклик асистента з текстом: {user_input}")
@@ -24,14 +25,11 @@ async def ask_assistant(user_input):
         logger.info(f"Створено thread з ID: {thread.id}")
 
         openai.beta.threads.messages.create(
-            thread_id=thread.id,
-            role="user",
-            content=user_input
+            thread_id=thread.id, role="user", content=user_input
         )
 
         run = openai.beta.threads.runs.create(
-            thread_id=thread.id,
-            assistant_id=assistant_id
+            thread_id=thread.id, assistant_id=assistant_id
         )
 
         logger.info(f"Створено run з ID: {run.id}")
@@ -42,8 +40,7 @@ async def ask_assistant(user_input):
 
         while attempt < max_attempts:
             run_status = openai.beta.threads.runs.retrieve(
-                thread_id=thread.id,
-                run_id=run.id
+                thread_id=thread.id, run_id=run.id
             )
 
             logger.info(f"Run статус: {run_status.status}")
@@ -56,7 +53,9 @@ async def ask_assistant(user_input):
 
         else:
             logger.error("Асистент обробляв запит занадто довго.")
-            return "Вибач, відповідь зайняла занадто багато часу. Спробуй ще раз пізніше."
+            return (
+                "Вибач, відповідь зайняла занадто багато часу. Спробуй ще раз пізніше."
+            )
 
         messages = openai.beta.threads.messages.list(thread_id=thread.id)
         reply = messages.data[0].content[0].text.value
