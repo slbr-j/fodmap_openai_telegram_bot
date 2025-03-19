@@ -62,7 +62,7 @@ async def cmd_start(message: types.Message):
         chat_id=message.chat.id, action=ChatAction.TYPING
     )
     await message.answer(
-        "Привіт! Я FODMAP асистент 👩🏻‍⚕️\n\nОберіть опцію з меню:",
+        "Привіт! \n\nОберіть опцію з меню:",
         reply_markup=get_main_menu(),
     )
 
