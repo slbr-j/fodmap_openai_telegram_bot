@@ -10,7 +10,7 @@ from keyboard_labels import (
     BTN_BACK_TO_CATEGORIES,
     BTN_WHAT_IS_FODMAP,
     BTN_DIET_STAGES,
-    BTN_SYMPTOMS_CAUSE
+    BTN_SYMPTOMS_CAUSE,
 )
 
 
@@ -19,14 +19,15 @@ def get_main_menu():
         [KeyboardButton(text=BTN_CATEGORIES)],
         [KeyboardButton(text=BTN_PRODUCT_SEARCH)],
         [KeyboardButton(text=BTN_FODMAP_INFO)],
-        [KeyboardButton(text=BTN_BOOK_CONSULTATION)]
+        [KeyboardButton(text=BTN_BOOK_CONSULTATION)],
     ]
     return ReplyKeyboardMarkup(
         keyboard=keyboard,
-        resize_keyboard=True,       # адаптує розмір кнопок
-        one_time_keyboard=False,    # кнопки залишаються завжди на екрані
-        input_field_placeholder="Оберіть опцію з меню 👇"  # текст підказки
+        resize_keyboard=True,  # адаптує розмір кнопок
+        one_time_keyboard=False,  # кнопки залишаються завжди на екрані
+        input_field_placeholder="Оберіть опцію з меню 👇",  # текст підказки
     )
+
 
 def get_fodmap_info_keyboard():
     keyboard = [
@@ -34,11 +35,11 @@ def get_fodmap_info_keyboard():
         [KeyboardButton(text=BTN_DIET_STAGES)],
         [KeyboardButton(text=BTN_SYMPTOMS_CAUSE)],
         [KeyboardButton(text=BTN_BOOK_CONSULTATION)],
-        [KeyboardButton(text=BTN_BACK_TO_MAIN_MENU)]
+        [KeyboardButton(text=BTN_BACK_TO_MAIN_MENU)],
     ]
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
-    
+
 def get_product_categories_keyboard():
     keyboard_rows = []
     row = []
@@ -56,6 +57,7 @@ def get_product_categories_keyboard():
     keyboard_rows.append([KeyboardButton(text=BTN_BACK_TO_MAIN_MENU)])
 
     return ReplyKeyboardMarkup(keyboard=keyboard_rows, resize_keyboard=True)
+
 
 def get_products_keyboard(category_id: str):
     """
@@ -81,9 +83,20 @@ def get_products_keyboard(category_id: str):
 
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
+
 def get_next_actions_keyboard():
-    keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="➡️ Дивитися інші овочі", callback_data="category_ovochi_next")],
-        [InlineKeyboardButton(text=BTN_BACK_TO_CATEGORIES, callback_data="back_to_categories")]
-    ])
+    keyboard = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(
+                    text="➡️ Дивитися інші овочі", callback_data="category_ovochi_next"
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    text=BTN_BACK_TO_CATEGORIES, callback_data="back_to_categories"
+                )
+            ],
+        ]
+    )
     return keyboard
