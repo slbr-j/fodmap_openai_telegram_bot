@@ -18,6 +18,7 @@ from data_loader import (
 from assistants_api import ask_assistant
 from keyboard_labels import (
     BTN_CATEGORIES,
+    BTN_LOW_HIGH_FODMAP,
     BTN_PRODUCT_SEARCH,
     BTN_FODMAP_INFO,
     BTN_BOOK_CONSULTATION,
@@ -84,6 +85,35 @@ async def cmd_consultation(message: types.Message):
         "Або через телеграм бот клініки: <a href='https://t.me/vitamedicalBot'>t.me/vitamedicalBot</a>\n\n"
         "Не консультую в Direct! Google 24/7 — go! 😉"
     )
+
+
+@router.message(Command("fodmap_products"))
+async def cmd_fodmap_products(message: types.Message):
+    await show_low_high_fodmap_products(message)
+
+
+@router.message(lambda msg: msg.text == BTN_LOW_HIGH_FODMAP)
+async def show_low_high_fodmap_products(message: types.Message):
+    low_fodmap_products = [
+        p["name"] for p in PRODUCTS if p.get("overall_fodmap_level") == "low"
+    ]
+    high_fodmap_products = [
+        p["name"] for p in PRODUCTS if p.get("overall_fodmap_level") == "high"
+    ]
+
+    low_list = "\n".join([f"✅ {name}" for name in low_fodmap_products])
+    high_list = "\n".join([f"🚫 {name}" for name in high_fodmap_products])
+
+    text = (
+        "<b>Продукти з низьким вмістом FODMAP:</b>\n\n"
+        f"{low_list}\n\n"
+        "<b>Продукти з високим вмістом FODMAP:</b>\n\n"
+        f"{high_list}\n\n"
+        "❗️ Памʼятайте, FODMAP речовини з різних продуктів можуть накопичуватись.\n\n"
+        "👉 <b>Лікую, а не лякаю 🫂</b>"
+    )
+
+    await message.answer(text)
 
 
 # ABOUT FODMAP

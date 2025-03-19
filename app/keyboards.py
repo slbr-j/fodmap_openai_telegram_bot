@@ -3,6 +3,7 @@ from data_loader import CATEGORIES, CATEGORY_ID_TO_NAME, get_products_by_categor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from keyboard_labels import (
     BTN_CATEGORIES,
+    BTN_LOW_HIGH_FODMAP,
     BTN_PRODUCT_SEARCH,
     BTN_FODMAP_INFO,
     BTN_BOOK_CONSULTATION,
@@ -17,6 +18,7 @@ from keyboard_labels import (
 def get_main_menu():
     keyboard = [
         [KeyboardButton(text=BTN_CATEGORIES)],
+        [KeyboardButton(text=[BTN_LOW_HIGH_FODMAP])],
         [KeyboardButton(text=BTN_PRODUCT_SEARCH)],
         [KeyboardButton(text=BTN_FODMAP_INFO)],
         [KeyboardButton(text=BTN_BOOK_CONSULTATION)],

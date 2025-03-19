@@ -1,4 +1,6 @@
 BTN_START = "▶️ Почати"
+
+BTN_LOW_HIGH_FODMAP = "📗 Продукти Low/High FODMAP"
 BTN_CATEGORIES = "🍎 Категорії продуктів"
 BTN_PRODUCT_SEARCH = "🥦 Продукти (пошук)"
 BTN_FODMAP_INFO = "🥗 Про FODMAP"
