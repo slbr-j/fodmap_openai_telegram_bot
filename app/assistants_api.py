@@ -1,7 +1,8 @@
 import openai
 import os
 import logging
-import time
+import asyncio
+from openai.error import RateLimitError, Timeout, APIError
 
 logger = logging.getLogger(__name__)
 
@@ -49,7 +50,7 @@ async def ask_assistant(user_input):
                 break
 
             attempt += 1
-            time.sleep(3)  # чекаємо 3 секунди між перевірками
+            await asyncio.sleep(3)  # async sleep instead of time.sleep
 
         else:
             logger.error("Асистент обробляв запит занадто довго.")
@@ -64,6 +65,13 @@ async def ask_assistant(user_input):
 
         return reply
 
+    except RateLimitError:
+        return "Вибач, забагато запитів до асистента. Спробуй трохи пізніше!"
+    except Timeout:
+        return "Асистент не відповів вчасно, спробуй знову!"
+    except APIError as e:
+        logger.error(f"OpenAI API error: {e}")
+        return "Щось пішло не так з OpenAI. Спробуй знову пізніше."
     except Exception as e:
-        logger.error(f"Помилка у ask_assistant: {e}")
+        logger.error(f"Unexpected error in ask_assistant: {e}")
         return "Вибач, сталася помилка. Спробуй ще раз пізніше!"

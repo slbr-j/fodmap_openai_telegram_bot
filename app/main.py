@@ -16,10 +16,17 @@ if not TELEGRAM_TOKEN:
     logger.error("TELEGRAM_TOKEN not found! Check ENV.")
     raise ValueError("TELEGRAM_TOKEN is missing!")
 
-# --- Init Bot and Dispatcher ---
-bot = Bot(token=TELEGRAM_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
-dp = Dispatcher()
+# --- Init Bot and Dispatcher ---
+def create_bot_and_dispatcher():
+    bot = Bot(
+        token=TELEGRAM_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML)
+    )
+    dp = Dispatcher()
+    return bot, dp
+
+
+bot, dp = create_bot_and_dispatcher()
 
 # --- FastAPI app ---
 app = FastAPI()
