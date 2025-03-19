@@ -31,8 +31,9 @@ from keyboard_labels import (
 router = Router()
 
 BOOKING_KEYWORDS = [
-    r"\bзапис(атись|атися)?\b",
+    r"\bзапис(атись|атися|уєш)?\b",
     r"\bконсультац(ія|ії|ію|іями)?\b",
+    r"\bпроконсульту(є|ватись|ватися)?\b",
     r"\bappointment\b",
     r"\bbook\b",
     r"\bschedule\b",
