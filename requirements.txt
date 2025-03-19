@@ -2,3 +2,4 @@ fastapi
 aiogram
 openai
 uvicorn
+rapidfuzz

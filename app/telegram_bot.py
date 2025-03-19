@@ -278,20 +278,59 @@ async def cmd_product_search(message: types.Message):
     await message.answer("Введіть назву продукту для пошуку 🧐")
 
 
+from rapidfuzz import process, fuzz
+
+
+def find_product_by_name_fuzzy(name: str, threshold: int = 80):
+    """Fuzzy search for product name"""
+    product_names = [p["name"] for p in PRODUCTS]
+
+    # extractOne returns (name, score, index)
+    match = process.extractOne(name, product_names, scorer=fuzz.WRatio)
+
+    if match and match[1] >= threshold:
+        # Повертаємо продукт за знайденою назвою
+        return next((p for p in PRODUCTS if p["name"] == match[0]), None)
+
+    return None
+
+
 @router.message()
 async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
 
+    # 1. Пошук точного збігу в products.json
     product = find_product_by_name(user_input)
+
+    # 2. Якщо немає ➡️ Fuzzy пошук
+    if not product:
+        product = find_product_by_name_fuzzy(user_input)
+
+    # 3. Якщо знайшли продукт ➡️ показуємо інфу
     if product:
         return await show_product_info(message)
 
+    # 4. Якщо нічого не знайшли ➡️ звертаємось до асистента OpenAI
     msg = await message.reply("👀 Пішов шукати...")
     await message.bot.send_chat_action(
         chat_id=message.chat.id, action=ChatAction.TYPING
     )
 
-    query = f"Розкажи про продукт '{user_input}' згідно дієти Low-FODMAP. Використовуй дані з завантаженого файлу."
+    # Підготовка контексту з твоїм списком продуктів
+    product_names = [p["name"] for p in PRODUCTS]
+    context = (
+        "У мене є список продуктів на дієті Low-FODMAP: "
+        + ", ".join(product_names)
+        + ". "
+        "Якщо продукту немає в списку, дай загальну відповідь згідно протоколу Low-FODMAP."
+    )
+
+    query = (
+        f"{context}\n\nКористувач питає про продукт '{user_input}'. "
+        "Відповідь має бути відповідно до правил дієти Low-FODMAP, "
+        "на основі перевірених джерел Дарʼї Володимирівни."
+    )
+
     response = await ask_assistant(query)
 
     await msg.delete()
