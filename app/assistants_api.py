@@ -2,7 +2,7 @@ import openai
 import os
 import logging
 import asyncio
-from openai.error import RateLimitError, Timeout, APIError
+from openai import RateLimitError, Timeout, APIError
 
 logger = logging.getLogger(__name__)
 
