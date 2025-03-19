@@ -2,7 +2,8 @@ import openai
 import os
 import logging
 import asyncio
-from openai import RateLimitError, Timeout, APIError
+from openai import RateLimitError, OpenAIError
+from openai._exceptions import Timeout
 
 logger = logging.getLogger(__name__)
 
@@ -14,22 +15,22 @@ if not openai_api_key or not assistant_id:
     logger.error("ENV variables OPENAI_API_KEY or ASSISTANT_ID not found!")
     raise ValueError("There are no environment variables for the OpenAI API.")
 
-# Assigning a key to openai
-openai.api_key = openai_api_key
+# Assigning a key to openai client
+client = openai.OpenAI(api_key=openai_api_key)
 
 
 async def ask_assistant(user_input):
     try:
         logger.info(f"Виклик асистента з текстом: {user_input}")
 
-        thread = openai.beta.threads.create()
+        thread = client.beta.threads.create()
         logger.info(f"Створено thread з ID: {thread.id}")
 
-        openai.beta.threads.messages.create(
+        client.beta.threads.messages.create(
             thread_id=thread.id, role="user", content=user_input
         )
 
-        run = openai.beta.threads.runs.create(
+        run = client.beta.threads.runs.create(
             thread_id=thread.id, assistant_id=assistant_id
         )
 
@@ -40,7 +41,7 @@ async def ask_assistant(user_input):
         attempt = 0
 
         while attempt < max_attempts:
-            run_status = openai.beta.threads.runs.retrieve(
+            run_status = client.beta.threads.runs.retrieve(
                 thread_id=thread.id, run_id=run.id
             )
 
@@ -50,7 +51,7 @@ async def ask_assistant(user_input):
                 break
 
             attempt += 1
-            await asyncio.sleep(3)  # async sleep instead of time.sleep
+            await asyncio.sleep(3)
 
         else:
             logger.error("Асистент обробляв запит занадто довго.")
@@ -58,7 +59,7 @@ async def ask_assistant(user_input):
                 "Вибач, відповідь зайняла занадто багато часу. Спробуй ще раз пізніше."
             )
 
-        messages = openai.beta.threads.messages.list(thread_id=thread.id)
+        messages = client.beta.threads.messages.list(thread_id=thread.id)
         reply = messages.data[0].content[0].text.value
 
         logger.info(f"Відповідь асистента: {reply}")
@@ -69,7 +70,7 @@ async def ask_assistant(user_input):
         return "Вибач, забагато запитів до асистента. Спробуй трохи пізніше!"
     except Timeout:
         return "Асистент не відповів вчасно, спробуй знову!"
-    except APIError as e:
+    except OpenAIError as e:
         logger.error(f"OpenAI API error: {e}")
         return "Щось пішло не так з OpenAI. Спробуй знову пізніше."
     except Exception as e:
