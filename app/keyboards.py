@@ -18,7 +18,7 @@ from keyboard_labels import (
 def get_main_menu():
     keyboard = [
         [KeyboardButton(text=BTN_CATEGORIES)],
-        [KeyboardButton(text=[BTN_LOW_HIGH_FODMAP])],
+        [KeyboardButton(text=BTN_LOW_HIGH_FODMAP)],
         [KeyboardButton(text=BTN_PRODUCT_SEARCH)],
         [KeyboardButton(text=BTN_FODMAP_INFO)],
         [KeyboardButton(text=BTN_BOOK_CONSULTATION)],
