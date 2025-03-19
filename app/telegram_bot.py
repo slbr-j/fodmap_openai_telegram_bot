@@ -1,8 +1,19 @@
 from aiogram import Router, types
 from aiogram.filters import Command
 from aiogram.enums import ChatAction
-from keyboards import get_main_menu, get_product_categories_keyboard, get_products_keyboard, get_fodmap_info_keyboard
-from data_loader import CATEGORIES, CATEGORY_NAME_TO_ID, CATEGORY_ID_TO_NAME, PRODUCTS, get_products_by_category
+from keyboards import (
+    get_main_menu,
+    get_product_categories_keyboard,
+    get_products_keyboard,
+    get_fodmap_info_keyboard
+)
+from data_loader import (
+    CATEGORIES,
+    CATEGORY_NAME_TO_ID,
+    CATEGORY_ID_TO_NAME,
+    PRODUCTS,
+    get_products_by_category
+)
 from assistants_api import ask_assistant
 from keyboard_labels import (
     BTN_CATEGORIES,
@@ -21,7 +32,6 @@ router = Router()
 # Старт / Головне меню
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
-    # Показуємо що "друкує"
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
     await message.answer(
         "Привіт! Я FODMAP асистент 👩🏻‍⚕️\n\nОберіть опцію з меню:",
@@ -35,15 +45,14 @@ async def cmd_menu(message: types.Message):
 # BOOKING
 @router.message(lambda msg: msg.text == BTN_BOOK_CONSULTATION)
 async def cmd_consultation(message: types.Message):
-    # Показуємо що "друкує"
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
     await message.answer(
         "Дарʼя Володимирівна консультує в клініці Vita Medical.\n\n"
-        "Запис через сайт: https://vitamedical.com.ua/\n"
-        "Або через телеграм бот клініки: https://t.me/vitamedicalBot\n\n"
-        "Не консультую в Direct! Google 24/7 — go! 😉",
-        parse_mode="HTML"
+        "Запис через сайт: <a href='https://vitamedical.com.ua/'>vitamedical.com.ua</a>\n"
+        "Або через телеграм бот клініки: <a href='https://t.me/vitamedicalBot'>t.me/vitamedicalBot</a>\n\n"
+        "Не консультую в Direct! Google 24/7 — go! 😉"
     )
+
 # ABOUT FODMAP
 @router.message(lambda msg: msg.text == BTN_FODMAP_INFO)
 async def cmd_fodmap_info(message: types.Message):
@@ -94,13 +103,11 @@ async def explain_diet_steps(message: types.Message):
 async def explain_symptoms(message: types.Message):
     await message.answer(
         "🧐 <b>Чому виникають симптоми?</b>\n\n"
-        "FODMAP притягують воду в кишківник 💧 та ферментуються бактеріями 🦠, "
-        "що спричиняє:\n"
+        "FODMAP притягують воду в кишківник 💧 та ферментуються бактеріями 🦠, що спричиняє:\n\n"
         "🔹 здуття 🎈\n"
         "🔹 біль 🥴\n"
         "🔹 діарею 🚽\n\n"
-        "Особливо це актуально для людей із синдромом подразненого кишечника (IBS), "
-        "бо їх кишківник більш чутливий.\n\n"
+        "Особливо це актуально для людей із синдромом подразненого кишечника (IBS).\n\n"
         "👉 <b>Лікую, а не лякаю 🫂</b>"
     )
 
@@ -125,10 +132,8 @@ async def cmd_categories(message: types.Message):
 async def ask_category(message: types.Message):
     category_id = CATEGORY_NAME_TO_ID[message.text]
     
-    # Додаємо індикатор, що бот "друкує"
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
-    # Генеруємо клавіатуру продуктів цієї категорії
     products_keyboard = get_products_keyboard(category_id)
 
     if products_keyboard:
@@ -146,17 +151,11 @@ async def back_to_categories(message: types.Message):
         reply_markup=get_product_categories_keyboard()
     )
 
+# Пошук продукту
 def find_product_by_name(name: str):
-    """
-    Повертає продукт з PRODUCTS за його name.
-    Пошук нечутливий до регістру.
-    """
     return next((p for p in PRODUCTS if p["name"].lower() == name.lower()), None)
 
 def format_fodmaps(fodmaps: dict) -> str:
-    """
-    Форматує FODMAP значення в красивий рядок.
-    """
     return (
         f"Фруктоза: {fodmaps.get('fructose', '❓')}  "
         f"Лактоза: {fodmaps.get('lactose', '❓')}\n"
@@ -166,11 +165,9 @@ def format_fodmaps(fodmaps: dict) -> str:
         f"Фруктани: {fodmaps.get('fructans', '❓')}"
     )
 
-
 @router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
 async def show_product_info(message: types.Message):
-    # Пошук продукту за ім'ям
-    product = next((p for p in PRODUCTS if p["name"] == message.text), None)
+    product = find_product_by_name(message.text)
 
     if not product:
         await message.answer("Продукт не знайдено 😢")
@@ -180,12 +177,10 @@ async def show_product_info(message: types.Message):
 
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
-    # Витягуємо дані доз
     low_dose = product['doses']['low']
     moderate_dose = product['doses']['moderate']
     high_dose = product['doses']['high']
 
-    # Формуємо відповідь про продукт
     text = (
         f"📝 <b>{product['name']}</b>\n"
         f"Статус: {product['status']}\n\n"
@@ -205,9 +200,7 @@ async def show_product_info(message: types.Message):
     )
 
     await msg.delete()
-
-    await message.answer(text, parse_mode="HTML")
-
+    await message.answer(text)
 
 # ПОШУК ПРОДУКТУ
 @router.message(lambda msg: msg.text == BTN_PRODUCT_SEARCH)
@@ -218,19 +211,15 @@ async def cmd_product_search(message: types.Message):
 async def ask_product_info(message: types.Message):
     user_input = message.text.strip()
 
-    # Перевіряємо, чи є продукт у PRODUCTS
     product = find_product_by_name(user_input)
     if product:
-        return await show_product_info(message, product)
+        return await show_product_info(message)
 
-    # Якщо продукт не знайдений, йдемо до ассистента
     msg = await message.reply("👀 Пішов шукати...")
-
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
     query = f"Розкажи про продукт '{user_input}' згідно дієти Low-FODMAP. Використовуй дані з завантаженого файлу."
-
     response = await ask_assistant(query)
-    
+
     await msg.delete()
     await message.answer(response)
