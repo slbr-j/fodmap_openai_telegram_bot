@@ -170,6 +170,17 @@ async def explain_symptoms(message: types.Message):
     )
 
 
+@router.message(lambda msg: msg.text in [product["name"] for product in PRODUCTS])
+async def handle_category_product(message: types.Message):
+    product = find_product_by_name(message.text)
+
+    if product:
+        await show_product_details(message, product)
+    else:
+        # Цього не мало би бути, але про всяк випадок
+        await message.answer("Продукт не знайдено 😢")
+
+
 # --- ПОШУК ПРОДУКТУ ---
 @router.message(F.text == BTN_PRODUCT_SEARCH)
 async def cmd_product_search(message: types.Message, state: FSMContext):
