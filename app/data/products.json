@@ -4011,5 +4011,259 @@
     },
     "comment": "Пшеничний хліб на заквасці містить галакто-олігосахариди.",
     "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_146",
+    "name": "Хлібці кукурудзяні",
+    "category_id": "bakery",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (2 хлібці)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кукурудзяні хлібці безпечні при Low-FODMAP дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_147",
+    "name": "Цибуля зелена (пір'я)",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (1 чашка нарізаного пір'я)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зелена цибуля (пір'я) безпечна при FODMAP-дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_148",
+    "name": "Цибуля зелена (біла частина)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (1 столова ложка нарізаної білої частини)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "30г (2 столові ложки нарізаної білої частини)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Біла частина зеленої цибулі містить галакто-олігосахариди.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_149",
+    "name": "Цибуля порей (зелена частина)",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (1 чашка нарізаного листя)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зелена частина порею не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_150",
+    "name": "Цибуля порей (біла частина)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (1 столова ложка нарізаної білої частини)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "30г (2 столові ложки нарізаної білої частини)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Біла частина порею містить фруктани.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_151",
+    "name": "Часник свіжий",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "3г (1 зубчик)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "10г (3 зубчики)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Часник багатий на фруктани.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_152",
+    "name": "Часникова олія (інфузія)",
+    "category_id": "fats",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "10г (2 чайні ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Часникова олія не містить FODMAP, оскільки фруктани не розчиняються в олії.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_153",
+    "name": "Червона смородина",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "50г (½ чашки ягід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Червона смородина не містить значущих FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_154",
+    "name": "Чорниця свіжа",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "40г (¼ чашки ягід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Чорниця безпечна при дотриманні порції.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_155",
+    "name": "Яблуко свіже",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (¼ маленького яблука)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "80г (½ середнього яблука)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Яблуко містить сорбітол і фруктозу у високих дозах.",
+    "overall_fodmap_level": "high"
   }
 ]
