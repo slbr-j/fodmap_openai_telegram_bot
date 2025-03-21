@@ -2298,5 +2298,248 @@ ChatGPT Plus
     },
     "comment": "Кориця підходить для дієти Low-FODMAP.",
     "overall_fodmap_level": "low"
+  },
+   {
+    "id": "prod_077",
+    "name": "Кукурудза варена",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "38г (½ качана)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "60г (¾ качана)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Кукурудза містить галакто-олігосахариди у великих кількостях.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_078",
+    "name": "Кукурудза консервована",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "42г (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "75г (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Консервована кукурудза містить більше FODMAP, ніж свіжа варена.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_079",
+    "name": "Кунжут",
+    "category_id": "legumes",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "11г (1 столова ложка насіння)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кунжут безпечний при FODMAP-дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_080",
+    "name": "Лавровий лист",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "1г (1 листок сушений)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Лавровий лист не містить значних FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_081",
+    "name": "Лайм",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "48г (1 плід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Лайм безпечний при FODMAP-дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_082",
+    "name": "Лимон",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "48г (1 плід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Лимон не містить значних FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_083",
+    "name": "Лимонний сік свіжий",
+    "category_id": "drinks",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "42г (3 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Свіжий лимонний сік не містить значних FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_084",
+    "name": "Лляне насіння",
+    "category_id": "legumes",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (1 столова ложка меленого насіння)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Лляне насіння безпечне при дотриманні дозування.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_085",
+    "name": "Мандарин",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "88г (1 середній плід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Мандарин безпечний при Low-FODMAP дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_086",
+    "name": "Манго",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "40г (¼ середнього плоду)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "100г (½ середнього плоду)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Манго містить велику кількість фруктози і сорбітолу.",
+    "overall_fodmap_level": "high"
   }
 ]
