@@ -1671,5 +1671,240 @@
     },
     "comment": "",
     "overall_fodmap_level": "high"
-  }
+  },
+  {
+        "id": "prod_060",
+        "name": "Булгур, приготований",
+        "category_id": "grains",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "44г (¼ чашки, приготований)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "88г (½ чашки, приготований)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_061",
+        "name": "Бурий рис, приготований",
+        "category_id": "grains",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "180г (1 чашка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_062",
+        "name": "Бистророзчинна кава, гранули/порошок",
+        "category_id": "drinks",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "4г (2 чайні ложки з гіркою)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "150г (¾ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "high": {
+                "amount": "189г (1 чашка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "Кофеїн може посилювати симптоми СРК через стимуляцію моторики кишечника.",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_063",
+        "name": "Виноград білий без кісточок",
+        "category_id": "fruits",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "11г (2 середніх)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "15г (3 середніх)",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "75г (15 середніх)",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_064",
+        "name": "Виноград червоний без кісточок",
+        "category_id": "fruits",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "10г (2 середніх)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "14г (3 середніх)",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "75г (15 середніх)",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_065",
+        "name": "Віскі",
+        "category_id": "drinks",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "29г (1 шот)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Алкоголь є подразником для кишечника.",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_066",
+        "name": "Вітлуф",
+        "category_id": "vegetables",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "75г (1½ шт)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "500г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Продукт залишається low-FODMAP навіть у дозі 500 грамів.",
+        "overall_fodmap_level": "low"
+    }
 ]
