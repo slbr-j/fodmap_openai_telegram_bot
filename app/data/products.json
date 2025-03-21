@@ -2130,5 +2130,251 @@
         },
         "comment": "Навіть у дозі 500 грамів продукт залишається low-FODMAP.",
         "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_074",
+        "name": "Горох заморожений",
+        "category_id": "legumes",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "15г (1 столова ложка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "18г (⅛ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "75г (½ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_075",
+        "name": "Горохова крупа, приготована",
+        "category_id": "legumes",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "high_1": {
+                "amount": "45г (¼ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            },
+            "high_2": {
+                "amount": "90г (½ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_076",
+        "name": "Горошок консервований",
+        "category_id": "legumes",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "53г (⅓ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "67г (⅓ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "75г (½ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_077",
+        "name": "Гірчиця",
+        "category_id": "spices",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "11г (1 столова ложка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_078",
+        "name": "Гранат",
+        "category_id": "fruits",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "42г (¼ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "53г (⅓ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "high": {
+                "amount": "87г (½ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟡",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_079",
+        "name": "Гранола",
+        "category_id": "snacks",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "moderate": {
+                "amount": "26г (¼ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "high": {
+                "amount": "52г (½ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_080",
+        "name": "Цибуля сушена (гранульована)",
+        "category_id": "spices",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "2г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "4г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
     }
 ]
