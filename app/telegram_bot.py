@@ -334,19 +334,22 @@ def format_fodmaps(fodmaps: dict) -> str:
 async def show_product_details(message: types.Message, product: dict):
     msg = await message.reply("👀 Пішов шукати...")
 
-    low_dose = product["doses"]["low"]
-    moderate_dose = product["doses"]["moderate"]
-    high_dose = product["doses"]["high"]
+    # Get doses safely or provide default placeholders
+    low_dose = product.get("doses", {}).get("low", {"amount": "❓", "fodmaps": {}})
+    moderate_dose = product.get("doses", {}).get(
+        "moderate", {"amount": "❓", "fodmaps": {}}
+    )
+    high_dose = product.get("doses", {}).get("high", {"amount": "❓", "fodmaps": {}})
 
     text = (
-        f"📝 <b>{product['name']}</b>\n"
-        f"Статус: {product['status']}\n\n"
+        f"📝 <b>{product.get('name', '❓')}</b>\n"
+        f"Статус: {product.get('status', '❓')}\n\n"
         f"🟢 <b>Безпечна доза</b>: {low_dose['amount']}\n"
-        f"{format_fodmaps(low_dose['fodmaps'])}\n\n"
+        f"{format_fodmaps(low_dose.get('fodmaps', {}))}\n\n"
         f"🟡 <b>Помірна доза</b>: {moderate_dose['amount']}\n"
-        f"{format_fodmaps(moderate_dose['fodmaps'])}\n\n"
+        f"{format_fodmaps(moderate_dose.get('fodmaps', {}))}\n\n"
         f"🔴 <b>Небезпечна доза</b>: {high_dose['amount']}\n"
-        f"{format_fodmaps(high_dose['fodmaps'])}\n\n"
+        f"{format_fodmaps(high_dose.get('fodmaps', {}))}\n\n"
         f"{product.get('comment', '')}\n\n"
         f"❗️ Памʼятайте, що FODMAP речовини можуть накопичуватись при комбінації продуктів.\n\n"
         f"👉 Лікую, а не лякаю 🫂"
