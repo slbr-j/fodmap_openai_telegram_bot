@@ -1122,5 +1122,262 @@
     },
     "comment": "",
     "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_039",
+    "name": "Біла цибуля",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "10г (1 кільце)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "12г (1 кільце)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "75г (¾ середньої цибулини або ½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_040",
+    "name": "Білий рис, приготований",
+    "category_id": "cereals",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "190г (1 чашка, приготований)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Продукт залишається low-FODMAP навіть у дозі 500 грамів.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_041",
+    "name": "Білий цукор",
+    "category_id": "sweets",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "50г (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_042",
+    "name": "Білий хліб, пшеничний",
+    "category_id": "bakery",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "24г (1 шматок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "36г (1½ шматка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "49г (2 шматки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_043",
+    "name": "Білий шоколад",
+    "category_id": "sweets",
+    "status": "🟡 Medium-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "25г (4 дольки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "30г (5 дольок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "110г (18 дольок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🔴",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "medium"
+  },
+  {
+    "id": "prod_044",
+    "name": "Боби адзукі варені",
+    "category_id": "legumes",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "35г (⅕ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "40г (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "150г (1 чашка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🟡"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_045",
+    "name": "Боби мунг/маш очищені варені",
+    "category_id": "legumes",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "49г (2 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "58г (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "73г (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
   }
 ]
