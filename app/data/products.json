@@ -434,5 +434,281 @@
     },
     "comment": "Безглютеновий білий хліб підходить у рамках Low-FODMAP дієти.",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_016",
+    "name": "Броколі (головка)",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "240г (1¼ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "У великих кількостях броколі містить манітол.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_017",
+    "name": "Броколі (стебло)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "45г (⅓ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "160г (¾ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Стебло броколі містить більше манітолу, ніж головка.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_018",
+    "name": "Брюссельська капуста",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "38г (2 головки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "78г (4 головки)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Брюссельська капуста містить манітол у великих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_019",
+    "name": "Булгур",
+    "category_id": "grains",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "38г (¼ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "80г (½ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Булгур містить високий рівень фруктанів та галакто-олігосахаридів у великих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_020",
+    "name": "Бузина",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "5г (¼ чашки свіжих ягід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "20г (1 чашка свіжих ягід)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Бузина містить манітол у великих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_021",
+    "name": "Вершкове масло",
+    "category_id": "fats",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "19г (1 столова ложка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Вершкове масло містить мінімальну кількість лактози.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_022",
+    "name": "Виноград зелений",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "28г (10 ягід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зелений виноград має низький вміст FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_023",
+    "name": "Виноград червоний",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "28г (10 ягід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Червоний виноград має низький вміст FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_024",
+    "name": "Вівсяне молоко (з концентрату)",
+    "category_id": "drinks",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30мл (⅛ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "120мл (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Вівсяне молоко з концентрату містить високий рівень галакто-олігосахаридів.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_025",
+    "name": "Вівсяні пластівці (безглютенові)",
+    "category_id": "grains",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "52г (½ чашки приготованих)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Безглютенові вівсяні пластівці підходять для Low-FODMAP дієти.",
+    "overall_fodmap_level": "low"
   }
 ]
