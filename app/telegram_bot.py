@@ -334,26 +334,66 @@ def format_fodmaps(fodmaps: dict) -> str:
 async def show_product_details(message: types.Message, product: dict):
     msg = await message.reply("👀 Пішов шукати...")
 
-    # Get doses safely or provide default placeholders
-    low_dose = product.get("doses", {}).get("low", {"amount": "❓", "fodmaps": {}})
-    moderate_dose = product.get("doses", {}).get(
-        "moderate", {"amount": "❓", "fodmaps": {}}
-    )
-    high_dose = product.get("doses", {}).get("high", {"amount": "❓", "fodmaps": {}})
+    doses = product.get("doses", {})
 
-    text = (
-        f"📝 <b>{product.get('name', '❓')}</b>\n"
-        f"Статус: {product.get('status', '❓')}\n\n"
-        f"🟢 <b>Безпечна доза</b>: {low_dose['amount']}\n"
-        f"{format_fodmaps(low_dose.get('fodmaps', {}))}\n\n"
-        f"🟡 <b>Помірна доза</b>: {moderate_dose['amount']}\n"
-        f"{format_fodmaps(moderate_dose.get('fodmaps', {}))}\n\n"
-        f"🔴 <b>Небезпечна доза</b>: {high_dose['amount']}\n"
-        f"{format_fodmaps(high_dose.get('fodmaps', {}))}\n\n"
-        f"{product.get('comment', '')}\n\n"
-        f"❗️ Памʼятайте, що FODMAP речовини можуть накопичуватись при комбінації продуктів.\n\n"
-        f"👉 Лікую, а не лякаю 🫂"
+    # Safe retrieval of each dose
+    low_dose = doses.get("low")
+    moderate_dose = doses.get("moderate")
+    high_dose = doses.get("high")
+
+    # Base product info
+    text_lines = [
+        f"📝 <b>{product.get('name', '❓')}</b>",
+        f"Статус: {product.get('status', '❓')}",
+        "",  # empty line
+    ]
+
+    # Add Low dose if exists
+    if low_dose:
+        text_lines.extend(
+            [
+                f"🟢 <b>Безпечна доза:</b> {low_dose.get('amount', '❓')}",
+                format_fodmaps(low_dose.get("fodmaps", {})),
+                "",  # empty line
+            ]
+        )
+
+    # Add Moderate dose if exists
+    if moderate_dose:
+        text_lines.extend(
+            [
+                f"🟡 <b>Помірна доза:</b> {moderate_dose.get('amount', '❓')}",
+                format_fodmaps(moderate_dose.get("fodmaps", {})),
+                "",  # empty line
+            ]
+        )
+
+    # Add High dose if exists
+    if high_dose:
+        text_lines.extend(
+            [
+                f"🔴 <b>Небезпечна доза:</b> {high_dose.get('amount', '❓')}",
+                format_fodmaps(high_dose.get("fodmaps", {})),
+                "",  # empty line
+            ]
+        )
+
+    # Add optional comment if exists
+    if product.get("comment"):
+        text_lines.append(product["comment"])
+        text_lines.append("")
+
+    # Add the common footer
+    text_lines.extend(
+        [
+            "❗️ Памʼятайте, що FODMAP речовини можуть накопичуватись при комбінації продуктів.",
+            "",
+            "👉 Лікую, а не лякаю 🫂",
+        ]
     )
+
+    # Join all lines into the final text
+    text = "\n".join(text_lines)
 
     await msg.delete()
     await message.answer(text)
