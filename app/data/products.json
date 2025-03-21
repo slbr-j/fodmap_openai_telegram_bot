@@ -1379,5 +1379,155 @@
     },
     "comment": "",
     "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_046",
+    "name": "Бойзенова ягода",
+    "category_id": "fruits",
+    "status": "🟡 Medium-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "29г (6 шт)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "44г (9 шт)",
+        "fodmaps": {"fructose":"🟡","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "144г (1 чашка)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "medium"
+  },
+  {
+    "id": "prod_047",
+    "name": "Болгарський перець жовтий",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "35г (½ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "47г (⅔ чашки)",
+        "fodmaps": {"fructose":"🟡","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "75г (1 чашка)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_048",
+    "name": "Болгарський перець зелений",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (1 чашка)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "250г (3⅓ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟡"}
+      },
+      "high": {
+        "amount": "310г (4 чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🔴"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_049",
+    "name": "Болгарський перець червоний",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "43г (½ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "59г (¾ чашки)",
+        "fodmaps": {"fructose":"🟡","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "75г (1 чашка)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_050",
+    "name": "Болгарський перець помаранчевий",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "38г (½ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "51г (⅔ чашки)",
+        "fodmaps": {"fructose":"🟡","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "75г (1 чашка)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_051",
+    "name": "Бородинський хліб",
+    "category_id": "bakery",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "high": {
+        "amount": "43г (1 шматок)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🔴"}
+      },
+      "very_high": {
+        "amount": "86г (2 шматки)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🔴","fructans":"🔴"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_052",
+    "name": "Бразильський горіх",
+    "category_id": "nuts",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30г (10 шт)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "44г (15 шт)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟡","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "51г (17 шт)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🔴","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
   }
 ]
