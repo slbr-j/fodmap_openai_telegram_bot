@@ -754,5 +754,96 @@
         },
         "comment": "",
         "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_023",
+        "name": "Бальзамічний оцет",
+        "category_id": "vinegars",
+        "status": "🟡 Medium-FODMAP",
+        "doses": {
+            "low": {"amount": "21г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "moderate": {"amount": "42г", "fodmaps": {"fructose": "🟡", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "high": {"amount": "63г", "fodmaps": {"fructose": "🟡", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟡", "gos": "🟢", "fructans": "🟡"}}
+        },
+        "comment": "",
+        "overall_fodmap_level": "medium"
+    },
+    {
+        "id": "prod_024",
+        "name": "Банан неспілий",
+        "category_id": "fruits",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {"amount": "95г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "moderate": {"amount": "100г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟡"}},
+            "high": {"amount": "123г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🔴"}}
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_025",
+        "name": "Банан спілий",
+        "category_id": "fruits",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {"amount": "37г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "moderate": {"amount": "47г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟡"}},
+            "high": {"amount": "95г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🔴"}}
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_026",
+        "name": "Банан сушений",
+        "category_id": "fruits",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {"amount": "30г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "moderate": {"amount": "32г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟡"}},
+            "high": {"amount": "38г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🔴"}}
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_027",
+        "name": "Бананова мука (з зеленого банана)",
+        "category_id": "flours",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {"amount": "100г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "moderate": {"amount": "150г", "fodmaps": {"fructose": "🟡", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟡", "gos": "🟢", "fructans": "🟢"}},
+            "high": {"amount": "200г", "fodmaps": {"fructose": "🔴", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟡", "gos": "🟢", "fructans": "🟡"}}
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_028",
+        "name": "Баранина",
+        "category_id": "meat",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {"amount": "125г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "moderate": {"amount": "150г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "high": {"amount": "200г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}}
+        },
+        "comment": "Цей продукт містить велику кількість білка і не містить вуглеводів.",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_029",
+        "name": "Батончик мюслі (з фруктами)",
+        "category_id": "snacks",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {"amount": "32г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🔴"}},
+            "moderate": {"amount": "50г", "fodmaps": {"fructose": "🟡", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟡"}},
+            "high": {"amount": "70г", "fodmaps": {"fructose": "🔴", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟡", "gos": "🟢", "fructans": "🔴"}}
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
     }
 ]
