@@ -2055,5 +2055,248 @@ ChatGPT Plus
     },
     "comment": "Звичайний кефір містить лактозу, яка підвищує рівень FODMAP.",
     "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_067",
+    "name": "Кіноа варена",
+    "category_id": "grains",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "155г (1 чашка приготованої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кіноа безпечна в межах рекомендованої порції.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_068",
+    "name": "Кокос свіжа м'якоть",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "63г (½ чашки тертого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Свіжа м’якоть кокоса безпечна у вказаній кількості.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_069",
+    "name": "Кокос сушений (стружка)",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30г (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Сушена стружка кокоса має низький рівень FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_070",
+    "name": "Кокосова вода",
+    "category_id": "drinks",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "100мл (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "250мл (1 чашка)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кокосова вода містить сорбітол у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_071",
+    "name": "Кокосове молоко (з консерви)",
+    "category_id": "dairy",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "60мл (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "120мл (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кокосове молоко містить поліоли у великих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_072",
+    "name": "Кокосове молоко (з картону)",
+    "category_id": "dairy",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "60мл (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кокосове молоко з картону має низький рівень FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_073",
+    "name": "Кокосове масло",
+    "category_id": "fats",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "10г (2 чайні ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кокосове масло не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_074",
+    "name": "Копчена ковбаса",
+    "category_id": "meat",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (2 скибки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "50г (5 скибок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🔴",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Копчені ковбаси можуть містити додаткові джерела фруктанів і галакто-олігосахаридів.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_075",
+    "name": "Коріандр (зелень)",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "16г (½ чашки подрібненої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Коріандр не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_076",
+    "name": "Кориця",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "2г (½ чайної ложки меленої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кориця підходить для дієти Low-FODMAP.",
+    "overall_fodmap_level": "low"
   }
 ]
