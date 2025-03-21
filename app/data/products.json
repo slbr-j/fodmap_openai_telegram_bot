@@ -3448,5 +3448,303 @@ ChatGPT Plus
     },
     "comment": "Латук не містить значущих FODMAP.",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_126",
+    "name": "Салямі",
+    "category_id": "meat",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (2 скибки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "50г (5 скибок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🔴",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Салямі може містити додаткові фруктани та галакто-олігосахариди.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_127",
+    "name": "Сардини в олії",
+    "category_id": "meat",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "80г (1 невелика банка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Сардини безпечні при Low-FODMAP дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_128",
+    "name": "Селера стебло",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "10г (¼ стебла)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "40г (1 стебло)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Селера містить сорбітол у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_129",
+    "name": "Селеровий корінь",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (¼ чашки нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "60г (¾ чашки нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Корінь селери містить галакто-олігосахариди у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_130",
+    "name": "Слива свіжа",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (½ сливи)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "40г (1 слива)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Слива містить сорбітол і фруктозу у високих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_131",
+    "name": "Сливки рослинні",
+    "category_id": "dairy",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30мл (2 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Рослинні вершки безпечні при FODMAP-дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_132",
+    "name": "Сливки тваринного походження",
+    "category_id": "dairy",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15мл (1 столова ложка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "60мл (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🔴",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Тваринні вершки містять лактозу у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_133",
+    "name": "Соя варена",
+    "category_id": "legumes",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "42г (¼ чашки вареної)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "84г (½ чашки вареної)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Соя містить галакто-олігосахариди у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_134",
+    "name": "Спаржа зелена варена",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (1 маленький пагін)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "60г (5 пагонів)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Спаржа містить фруктозу і манітол у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_135",
+    "name": "Спагеті з білого борошна",
+    "category_id": "grains",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "74г (½ чашки вареної пасти)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "150г (1 чашка вареної пасти)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Звичайні спагеті містять галакто-олігосахариди у великих дозах.",
+    "overall_fodmap_level": "high"
   }
 ]
