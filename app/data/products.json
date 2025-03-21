@@ -710,5 +710,259 @@
     },
     "comment": "Безглютенові вівсяні пластівці підходять для Low-FODMAP дієти.",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_026",
+    "name": "Вишня",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "21г (10 вишень)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "60г (30 вишень)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Вишня містить високий рівень сорбітолу та манітолу.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_027",
+    "name": "Водорості норі",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "5г (1 аркуш)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Водорості норі не містять FODMAP-компонентів.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_028",
+    "name": "Гарбуз мускатний",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "45г (⅓ чашки приготованого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "100г (½ чашки приготованого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Гарбуз мускатний безпечний у малих порціях.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_029",
+    "name": "Гарбуз японський (Кабоча)",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки приготованого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Гарбуз Кабоча не містить значущих FODMAP-компонентів.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_030",
+    "name": "Гвоздика",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "1г (¼ чайної ложки меленого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Гвоздика безпечна при використанні в малих дозах.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_031",
+    "name": "Гірчиця",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "11г (2 чайні ложки готового продукту)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Гірчиця не містить значних FODMAP у помірних дозах.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_032",
+    "name": "Горох зелений (заморожений)",
+    "category_id": "legumes",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (1 столова ложка приготованого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "42г (¼ чашки приготованого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зелений горох містить галакто-олігосахариди.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_033",
+    "name": "Гранат",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "45г (¼ чашки зерен)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Гранат безпечний у помірних кількостях.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_034",
+    "name": "Грейпфрут",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "80г (½ плода)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Грейпфрут підходить у рамках Low-FODMAP дієти.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_035",
+    "name": "Гриби шампіньйони (свіжі)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "35г (½ чашки скибочок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "84г (1¼ чашки скибочок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Шампіньйони містять манітол у високих дозах.",
+    "overall_fodmap_level": "high"
   }
 ]
