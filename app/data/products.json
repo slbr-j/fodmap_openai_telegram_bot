@@ -4265,5 +4265,110 @@
     },
     "comment": "Яблуко містить сорбітол і фруктозу у високих дозах.",
     "overall_fodmap_level": "high"
+  },
+   {
+    "id": "prod_156",
+    "name": "Яблучний оцет",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "42г (3 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Яблучний оцет не містить значущих FODMAP у межах рекомендованої порції.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_157",
+    "name": "Яловичина варена",
+    "category_id": "meat",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "120г (порція вареного м'яса)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Варена яловичина не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_158",
+    "name": "Яйце куряче варене",
+    "category_id": "meat",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "60г (1 велике яйце)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Куряче яйце безпечне при FODMAP-дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_159",
+    "name": "Яйце перепелине варене",
+    "category_id": "meat",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "9г (1 яйце)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Перепелине яйце не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_160",
+    "name": "Ягідний джем (без цукру)",
+    "category_id": "sweets",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (1 столова ложка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Ягідний джем без додавання цукру безпечний при Low-FODMAP дієті.",
+    "overall_fodmap_level": "low"
   }
 ]
