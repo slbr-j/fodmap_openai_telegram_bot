@@ -3227,5 +3227,226 @@ ChatGPT Plus
     },
     "comment": "Пшоняна мука підходить для випічки при Low-FODMAP дієті.",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_116",
+    "name": "Ревінь",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "150г (1 чашка нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Ревінь безпечний при дотриманні порції.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_117",
+    "name": "Редис",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Редис не містить значущих FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_118",
+    "name": "Редька чорна",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "50г (⅓ середньої редьки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Чорна редька безпечна у межах порції.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_119",
+    "name": "Рис білий варений",
+    "category_id": "grains",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "150г (1 чашка вареного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Білий рис не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_120",
+    "name": "Рис бурий варений",
+    "category_id": "grains",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "150г (1 чашка вареного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Бурий рис безпечний при FODMAP-дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_121",
+    "name": "Рисові пластівці",
+    "category_id": "grains",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30г (1 чашка сухих пластівців)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Рисові пластівці не містять FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_122",
+    "name": "Рисове молоко",
+    "category_id": "drinks",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "125мл (½ склянки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "250мл (1 склянка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Рисове молоко містить галакто-олігосахариди.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_123",
+    "name": "Ромашковий чай",
+    "category_id": "drinks",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "250мл (1 чашка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Ромашковий чай не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_124",
+    "name": "Рукола",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (1 чашка свіжого листя)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Рукола безпечна для Low-FODMAP харчування.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_125",
+    "name": "Салат латук",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (1 чашка нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Латук не містить значущих FODMAP.",
+    "overall_fodmap_level": "low"
   }
 ]
