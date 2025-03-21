@@ -1529,5 +1529,147 @@
     },
     "comment": "",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_053",
+    "name": "Бренді",
+    "category_id": "drinks",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30г (1 шот)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "Алкоголь може подразнювати кишечник.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_054",
+    "name": "Броколі (тільки суцвіття)",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (¾ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "208г (2 чашки)",
+        "fodmaps": {"fructose":"🟡","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "279г (2¾ чашки)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_055",
+    "name": "Броколі (тільки стебла)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "42г (⅓ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "57г (½ чашки)",
+        "fodmaps": {"fructose":"🟡","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "75г (¾ чашки)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_056",
+    "name": "Броколіні (тільки суцвіття)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "21г (¼ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "38г (⅓ чашки)",
+        "fodmaps": {"fructose":"🟡","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "75г (¾ чашки)",
+        "fodmaps": {"fructose":"🔴","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_057",
+    "name": "Броколіні (тільки стебла)",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (¾ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "275г (2¾ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟡"}
+      },
+      "high": {
+        "amount": "350г (3¾ чашки)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🔴"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_058",
+    "name": "Бруква",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ середньої)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "moderate": {
+        "amount": "93г (⅔ середньої)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟡","gos":"🟡","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "135г (1 середня)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🔴","gos":"🟡","fructans":"🟢"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_059",
+    "name": "Брюссельська капуста",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "53г (2⅔ середніх)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🟢"}
+      },
+      "high": {
+        "amount": "75г (4 шт)",
+        "fodmaps": {"fructose":"🟢","lactose":"🟢","mannitol":"🟢","sorbitol":"🟢","gos":"🟢","fructans":"🔴"}
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
   }
 ]
