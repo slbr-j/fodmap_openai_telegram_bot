@@ -384,11 +384,375 @@
         "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
-            "low": {"amount": "72г", "fodmaps": {"fructose": "🟢", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
-            "moderate": {"amount": "97г", "fodmaps": {"fructose": "🟡", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}},
+            "low": {
+              "amount": "72г", 
+              "fodmaps": {
+                "fructose": "🟢", 
+                "lactose": "🟢", 
+                "mannitol": "🟢", 
+                "sorbitol": "🟢", 
+                "gos": "🟢", 
+                "fructans": "🟢"
+                }
+              },
+            "moderate": {
+              "amount": "97г", 
+              "fodmaps": {
+                "fructose": "🟡", 
+                "lactose": "🟢", 
+                "mannitol": "🟢", 
+                "sorbitol": "🟢", 
+                "gos": "🟢", 
+                "fructans": "🟢"
+                }
+              },
             "high": {"amount": "200г", "fodmaps": {"fructose": "🔴", "lactose": "🟢", "mannitol": "🟢", "sorbitol": "🟢", "gos": "🟢", "fructans": "🟢"}}
         },
         "comment": "",
         "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_015",
+        "name": "Арахис",
+        "category_id": "nuts",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "28г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "56г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "140г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🔴",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_016",
+        "name": "Арахисова паста",
+        "category_id": "nuts",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "50г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "70г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "140г",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            }
+        },
+        "comment": "Слід уникати великих порцій (>140 г) через високий вміст фруктози.",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_017",
+        "name": "Арбуз без косточек",
+        "category_id": "fruits",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "18г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "24г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "150г",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🔴",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_018",
+        "name": "Артишок",
+        "category_id": "vegetables",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "16г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "20г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "high": {
+                "amount": "75г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_019",
+        "name": "Артишок маринований в маслі",
+        "category_id": "vegetables",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "13г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "16г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "high": {
+                "amount": "50г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_020",
+        "name": "Базилик свіжий",
+        "category_id": "herbs",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "16г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "30г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "45г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_021",
+        "name": "Базилик сушений",
+        "category_id": "herbs",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "2г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "14г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            },
+            "high": {
+                "amount": "20г",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_022",
+        "name": "Баклажан",
+        "category_id": "vegetables",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "75г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "178г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟡",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "269г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🔴",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
     }
 ]
