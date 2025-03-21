@@ -845,5 +845,133 @@
         },
         "comment": "",
         "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_030",
+        "name": "Безглютенова мука",
+        "category_id": "flours",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "100г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_031",
+        "name": "Безглютенова паста (кукурудзяно-рисова) приготована",
+        "category_id": "flours",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "80г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "500г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Продукт залишається Low-FODMAP навіть у дозі 500 грамів.",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_032",
+        "name": "Безглютенова паста (чечевична) приготована",
+        "category_id": "flours",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "36г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "42г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🟡"
+                }
+            },
+            "high": {
+                "amount": "80г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🔴",
+                    "fructans": "🔴"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_033",
+        "name": "Безглютеновий хліб, мультизлаковий",
+        "category_id": "flours",
+        "status": "🟡 Medium-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "37г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "73г",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "medium"
     }
 ]
