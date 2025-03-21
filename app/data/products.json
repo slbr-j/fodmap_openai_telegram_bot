@@ -3,7 +3,7 @@
     "id": "prod_001",
     "name": "Абрикос",
     "category_id": "fruits",
-    "status": "High-FODMAP",
+    "status": "🔴 High-FODMAP",
     "doses": {
       "low": {
         "amount": "15г (1 столова ложка)",
@@ -40,13 +40,13 @@
       }
     },
     "comment": "",
-    "overall_fodmap_level": "High-FODMAP"
+    "overall_fodmap_level": "high"
   },
   {
     "id": "prod_002",
     "name": "Абрикос консервований",
     "category_id": "fruits",
-    "status": "High-FODMAP",
+    "status": "🔴 High-FODMAP",
     "doses": {
       "low": {
         "amount": "20г (1½ столових ложки)",
@@ -83,13 +83,13 @@
       }
     },
     "comment": "",
-    "overall_fodmap_level": "High-FODMAP"
+    "overall_fodmap_level": "high"
   },
   {
     "id": "prod_003",
     "name": "Авокадо",
     "category_id": "fruits",
-    "status": "Low-FODMAP",
+    "status": "🟢 Low-FODMAP",
     "doses": {
       "low": {
         "amount": "60г (3 столові ложки)",
@@ -126,13 +126,13 @@
       }
     },
     "comment": "Авокадо містить унікальний цукровий спирт - персеїтол.",
-    "overall_fodmap_level": "Low-FODMAP"
+    "overall_fodmap_level": "low"
   },
   {
     "id": "prod_004",
     "name": "Агар-агар",
     "category_id": "spices",
-    "status": "Low-FODMAP",
+    "status": "🟢 Low-FODMAP",
     "doses": {
       "low": {
         "amount": "7г (1 паличка)",
@@ -147,13 +147,13 @@
       }
     },
     "comment": "Агар-агар — безпечний загусник, не містить FODMAP-компонентів.",
-    "overall_fodmap_level": "Low-FODMAP"
+    "overall_fodmap_level": "low"
   },
   {
     "id": "prod_005",
     "name": "Амарант повітряний",
     "category_id": "grains",
-    "status": "High-FODMAP",
+    "status": "🔴 High-FODMAP",
     "doses": {
       "low": {
         "amount": "10г (¼ чашки)",
@@ -179,6 +179,6 @@
       }
     },
     "comment": "Амарант містить велику кількість фруктанів у високих дозах.",
-    "overall_fodmap_level": "High-FODMAP"
+    "overall_fodmap_level": "high"
   }
 ]
