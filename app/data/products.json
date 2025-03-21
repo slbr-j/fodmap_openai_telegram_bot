@@ -1906,5 +1906,229 @@
         },
         "comment": "Продукт залишається low-FODMAP навіть у дозі 500 грамів.",
         "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_067",
+        "name": "Вишня / черешня",
+        "category_id": "fruits",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "20г (2 шт)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "25г (3 шт)",
+                "fodmaps": {
+                    "fructose": "🟡",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "150г (1 чашка / 20 шт)",
+                "fodmaps": {
+                    "fructose": "🔴",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🔴",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_068",
+        "name": "Горілка",
+        "category_id": "drinks",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "29г (1 шот)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Алкоголь є подразником для кишечника.",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_069",
+        "name": "Водорості вакаме сушені",
+        "category_id": "vegetables",
+        "status": "🟡 Medium-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "9г (2 чайні ложки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "10г (2 чайні ложки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟡",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "15г (2½ чайні ложки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🔴",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "medium"
+    },
+    {
+        "id": "prod_070",
+        "name": "Повітряний рис",
+        "category_id": "grains",
+        "status": "🔴 High-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "15г (½ чашки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "30г (1 чашка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟡"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "high"
+    },
+    {
+        "id": "prod_071",
+        "name": "Вустерширський соус",
+        "category_id": "spices",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "42г (2 столові ложки)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "moderate": {
+                "amount": "105г (5 столових ложок)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟡",
+                    "sorbitol": "🟢",
+                    "gos": "🟡",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_072",
+        "name": "Яловичина",
+        "category_id": "meat",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "125г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Містить багато білка і не містить вуглеводів. При готуванні уникайте додавання high-FODMAP інгредієнтів (наприклад, цибуля, часник).",
+        "overall_fodmap_level": "low"
+    },
+    {
+        "id": "prod_073",
+        "name": "Лохина",
+        "category_id": "fruits",
+        "status": "🟢 Low-FODMAP",
+        "doses": {
+            "low": {
+                "amount": "125г (1 чашка)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            },
+            "high": {
+                "amount": "500г",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
+        },
+        "comment": "Навіть у дозі 500 грамів продукт залишається low-FODMAP.",
+        "overall_fodmap_level": "low"
     }
 ]
