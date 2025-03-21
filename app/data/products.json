@@ -2541,5 +2541,259 @@ ChatGPT Plus
     },
     "comment": "Манго містить велику кількість фруктози і сорбітолу.",
     "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_087",
+    "name": "Маслини чорні консервовані",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (5 маслин)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Чорні маслини мають низький вміст FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_088",
+    "name": "Мед",
+    "category_id": "sweets",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "7г (1 чайна ложка)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "21г (1 столова ложка)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Мед містить велику кількість фруктози.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_089",
+    "name": "Мигдаль",
+    "category_id": "legumes",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "12г (10 горіхів)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "24г (20 горіхів)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Мигдаль містить галакто-олігосахариди у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_090",
+    "name": "Мінеральна вода (без газу)",
+    "category_id": "drinks",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "250мл (1 склянка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Мінеральна вода без газу не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_091",
+    "name": "Мінеральна вода (з газом)",
+    "category_id": "drinks",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "250мл (1 склянка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Мінеральна газована вода не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_092",
+    "name": "Молоко коров'яче звичайне",
+    "category_id": "dairy",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30мл (2 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "250мл (1 склянка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🔴",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Звичайне коров’яче молоко містить лактозу.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_093",
+    "name": "Молоко коров'яче безлактозне",
+    "category_id": "dairy",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "250мл (1 склянка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Безлактозне молоко підходить для Low-FODMAP дієти.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_094",
+    "name": "Молоко соєве (з соєвого білка)",
+    "category_id": "drinks",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "250мл (1 склянка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Соєве молоко на основі соєвого білка безпечне при FODMAP-дієті.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_095",
+    "name": "Молоко соєве (з соєвих бобів)",
+    "category_id": "drinks",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "120мл (½ склянки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "250мл (1 склянка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Молоко з соєвих бобів має високий рівень галакто-олігосахаридів.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_096",
+    "name": "Морква",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки нарізаної)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Морква не містить значущих FODMAP.",
+    "overall_fodmap_level": "low"
   }
 ]
