@@ -1482,5 +1482,270 @@ ChatGPT Plus
     },
     "comment": "Журавлина свіжа має низький рівень FODMAP.",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_046",
+    "name": "Журавлина сушена (без доданого цукру)",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "13г (1 столова ложка)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "26г (2 столові ложки)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Сушена журавлина без доданого цукру містить поліоли у високих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_047",
+    "name": "Зелена цибуля (зелена частина)",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки подрібненої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зелена частина зеленої цибулі безпечна.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_048",
+    "name": "Зелена цибуля (біла частина)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "12г (1 столова ложка подрібненої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "30г (¼ чашки подрібненої)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Біла частина зеленої цибулі містить фруктани та галакто-олігосахариди.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_049",
+    "name": "Зелений перець",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "52г (½ середнього перцю)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зелений перець безпечний у рамках Low-FODMAP дієти.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_050",
+    "name": "Зерна гранату",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "45г (¼ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зерна гранату містять мало FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_051",
+    "name": "Інжир сушений",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (1 шт.)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "40г (2 шт.)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Інжир сушений містить велику кількість поліолів.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_052",
+    "name": "Інжир свіжий",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "38г (1 маленький плід)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "75г (2 маленькі плоди)",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Інжир свіжий має високий вміст сорбітолу.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_053",
+    "name": "Індичка (філе)",
+    "category_id": "meat",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "100г (порція приготованого м'яса)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Індичка не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_054",
+    "name": "Італійська ковбаса (салямі)",
+    "category_id": "meat",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г (2 скибки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "50г (5 скибок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Ковбаса може містити додані фруктани або галакто-олігосахариди.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_055",
+    "name": "Йогурт безлактозний",
+    "category_id": "dairy",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "125г (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Безлактозний йогурт безпечний при Low-FODMAP дієті.",
+    "overall_fodmap_level": "low"
   }
 ]
