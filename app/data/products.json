@@ -1747,5 +1747,313 @@ ChatGPT Plus
     },
     "comment": "Безлактозний йогурт безпечний при Low-FODMAP дієті.",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_056",
+    "name": "Йогурт звичайний (з лактозою)",
+    "category_id": "dairy",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "100г (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "150г (¾ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🔴",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Містить лактозу, тому обмежене вживання рекомендовано при FODMAP-дієті.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_057",
+    "name": "Кабачок",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "65г (½ чашки нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "90г (¾ чашки нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Кабачок безпечний при FODMAP-дієті у невеликих кількостях.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_058",
+    "name": "Капуста біла",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (¾ чашки нарізаної)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "150г (1½ чашки нарізаної)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Біла капуста містить манітол у високих дозах.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_059",
+    "name": "Капуста квашена",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (¾ чашки нарізаної)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "150г (1½ чашки нарізаної)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Квашена капуста багата на галакто-олігосахариди у великих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_060",
+    "name": "Капуста червона",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (¾ чашки нарізаної)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Червона капуста містить низький рівень манітолу.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_061",
+    "name": "Карамболь",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "55г (1 середній плід)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Карамболь не містить значних FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_062",
+    "name": "Картопля біла",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "150г (1 середня бульба)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Картопля не містить FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_063",
+    "name": "Картопля солодка (батат)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "70г (½ середньої бульби)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "200г (1 середня бульба)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Батат містить сорбітол у високих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_064",
+    "name": "Квасоля зелена стручкова",
+    "category_id": "legumes",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Стручкова квасоля безпечна у невеликих кількостях.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_065",
+    "name": "Кеш'ю смажені",
+    "category_id": "legumes",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (10 горіхів)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "30г (20 горіхів)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Кеш'ю містять галакто-олігосахариди у великих дозах.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_066",
+    "name": "Кефір звичайний",
+    "category_id": "dairy",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "100г (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟡",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "150г (¾ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🔴",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Звичайний кефір містить лактозу, яка підвищує рівень FODMAP.",
+    "overall_fodmap_level": "high"
   }
 ]
