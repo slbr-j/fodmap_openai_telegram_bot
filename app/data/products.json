@@ -2795,5 +2795,226 @@ ChatGPT Plus
     },
     "comment": "Морква не містить значущих FODMAP.",
     "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_097",
+    "name": "Морква варена",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки приготованої)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Варена морква не містить значущих FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_098",
+    "name": "Мускатний горіх",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "1г (¼ чайної ложки тертого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Мускатний горіх безпечний у малих дозах.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_099",
+    "name": "Насіння гарбуза",
+    "category_id": "legumes",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "23г (2 столові ложки насіння)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Насіння гарбуза не містить значних FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_100",
+    "name": "Насіння соняшника",
+    "category_id": "legumes",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "23г (2 столові ложки насіння)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Насіння соняшника безпечне у межах порції.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_101",
+    "name": "Огірок свіжий",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ середнього огірка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Огірок не містить значних FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_102",
+    "name": "Огірки мариновані",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30г (1 маленький огірок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟡",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "60г (2 маленькі огірки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Мариновані огірки можуть містити додаткові галакто-олігосахариди.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_103",
+    "name": "Оливки зелені",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "15г (5 оливок)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Зелені оливки підходять для дієти Low-FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_104",
+    "name": "Пастернак",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (½ чашки нарізаного)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Пастернак безпечний при дотриманні рекомендованої порції.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_105",
+    "name": "Папайя",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "140г (1 чашка нарізаної)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Папайя підходить для дієти Low-FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_106",
+    "name": "Перець червоний",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "43г (½ перцю)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Червоний перець безпечний у помірних кількостях.",
+    "overall_fodmap_level": "low"
   }
 ]
