@@ -973,5 +973,154 @@
         },
         "comment": "",
         "overall_fodmap_level": "medium"
-    }
+    },
+    {
+    "id": "prod_034",
+    "name": "Бекон",
+    "category_id": "meat",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "60г",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Даний продукт містить багато білка та жирів, немає вуглеводів. Уникайте додавання high-FODMAP інгредієнтів (наприклад, цибуля і часник). Велика кількість жирів може служити незалежним тригером симптомів.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_035",
+    "name": "Біле вино",
+    "category_id": "drinks",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "149г (1 келих / 150 мл)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Алкоголь є подразником для кишечника.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_036",
+    "name": "Білокачанна капуста",
+    "category_id": "vegetables",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "75г (¾ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "194г (2 чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟡"
+        }
+      },
+      "high": {
+        "amount": "244г (2½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_037",
+    "name": "Білий винний оцет",
+    "category_id": "vinegars",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "42г (2 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_038",
+    "name": "Білий гриб сушений",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "12г (1 столова ложка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "19г (2 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟡",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "30г (½ чашки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🔴",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "",
+    "overall_fodmap_level": "high"
+  }
 ]
