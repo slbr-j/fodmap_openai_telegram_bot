@@ -1,49 +1,6 @@
 [
   {
     "id": "prod_001",
-    "name": "Авокадо",
-    "category_id": "fruits",
-    "status": "Low-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "60г (3 столові ложки)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "moderate": {
-        "amount": "80г (1/2 середнього плода)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟡",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "93г (4 1/2 столових ложки)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🔴",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
-    },
-    "comment": "Авокадо містить унікальний цукровий спирт - персеїтол.",
-    "overall_fodmap_level": "Low-FODMAP"
-  },
-  {
-    "id": "prod_002",
     "name": "Абрикос",
     "category_id": "fruits",
     "status": "High-FODMAP",
@@ -60,7 +17,7 @@
         }
       },
       "moderate": {
-        "amount": "24г (3/4 середнього плода)",
+        "amount": "24г (¾ середнього плода)",
         "fodmaps": {
           "fructose": "🟢",
           "lactose": "🟢",
@@ -71,7 +28,7 @@
         }
       },
       "high": {
-        "amount": "70г (2 середні плоди)",
+        "amount": "70г (2 середніх)",
         "fodmaps": {
           "fructose": "🟢",
           "lactose": "🟢",
@@ -82,17 +39,17 @@
         }
       }
     },
-    "comment": "Абрикос містить сорбітол у великих кількостях.",
+    "comment": "",
     "overall_fodmap_level": "High-FODMAP"
   },
   {
-    "id": "prod_003",
+    "id": "prod_002",
     "name": "Абрикос консервований",
     "category_id": "fruits",
     "status": "High-FODMAP",
     "doses": {
       "low": {
-        "amount": "20г (1 1/2 столових ложки)",
+        "amount": "20г (1½ столових ложки)",
         "fodmaps": {
           "fructose": "🟢",
           "lactose": "🟢",
@@ -125,13 +82,56 @@
         }
       }
     },
-    "comment": "Абрикос консервований містить підвищену кількість фруктози й сорбітолу у великих дозах.",
+    "comment": "",
     "overall_fodmap_level": "High-FODMAP"
+  },
+  {
+    "id": "prod_003",
+    "name": "Авокадо",
+    "category_id": "fruits",
+    "status": "Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "60г (3 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "moderate": {
+        "amount": "80г (½ середнього плода)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "93г (4½ столових ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Авокадо містить унікальний цукровий спирт - персеїтол.",
+    "overall_fodmap_level": "Low-FODMAP"
   },
   {
     "id": "prod_004",
     "name": "Агар-агар",
-    "category_id": "additives",
+    "category_id": "spices",
     "status": "Low-FODMAP",
     "doses": {
       "low": {
@@ -156,7 +156,7 @@
     "status": "High-FODMAP",
     "doses": {
       "low": {
-        "amount": "10г (1/4 чашки)",
+        "amount": "10г (¼ чашки)",
         "fodmaps": {
           "fructose": "🟢",
           "lactose": "🟢",
@@ -167,7 +167,7 @@
         }
       },
       "high": {
-        "amount": "30г (3/4 чашки)",
+        "amount": "30г (¾ чашки)",
         "fodmaps": {
           "fructose": "🟢",
           "lactose": "🟢",
@@ -179,144 +179,6 @@
       }
     },
     "comment": "Амарант містить велику кількість фруктанів у високих дозах.",
-    "overall_fodmap_level": "High-FODMAP"
-  },
-  {
-    "id": "prod_006",
-    "name": "Ананас",
-    "category_id": "fruits",
-    "status": "Low-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "140г (1 чашка)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
-    },
-    "comment": "Ананас безпечний у невеликих кількостях.",
-    "overall_fodmap_level": "Low-FODMAP"
-  },
-  {
-    "id": "prod_007",
-    "name": "Аніс",
-    "category_id": "spices",
-    "status": "Low-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "2г (1 чайна ложка)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟢",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
-    },
-    "comment": "Аніс використовується в невеликих кількостях, безпечний.",
-    "overall_fodmap_level": "Low-FODMAP"
-  },
-  {
-    "id": "prod_008",
-    "name": "Артишок",
-    "category_id": "vegetables",
-    "status": "High-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "30г (1/2 середнього артишока)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟡",
-          "gos": "🟡",
-          "fructans": "🔴"
-        }
-      },
-      "high": {
-        "amount": "80г (1 середній артишок)",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🔴",
-          "gos": "🔴",
-          "fructans": "🔴"
-        }
-      }
-    },
-    "comment": "Артишок містить фруктани та FOS.",
-    "overall_fodmap_level": "High-FODMAP"
-  },
-  {
-    "id": "prod_009",
-    "name": "Артишок маринований",
-    "category_id": "vegetables",
-    "status": "High-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "20г",
-        "fodmaps": {
-          "fructose": "🟡",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟡",
-          "gos": "🟡",
-          "fructans": "🔴"
-        }
-      },
-      "high": {
-        "amount": "50г і більше",
-        "fodmaps": {
-          "fructose": "🔴",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🔴",
-          "gos": "🔴",
-          "fructans": "🔴"
-        }
-      }
-    },
-    "comment": "Мариновані артишоки також багаті на фруктани.",
-    "overall_fodmap_level": "High-FODMAP"
-  },
-  {
-    "id": "prod_010",
-    "name": "Арбуз",
-    "category_id": "fruits",
-    "status": "High-FODMAP",
-    "doses": {
-      "low": {
-        "amount": "60г (1 скибка)",
-        "fodmaps": {
-          "fructose": "🟢",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🟡",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      },
-      "high": {
-        "amount": "120г і більше",
-        "fodmaps": {
-          "fructose": "🔴",
-          "lactose": "🟢",
-          "mannitol": "🟢",
-          "sorbitol": "🔴",
-          "gos": "🟢",
-          "fructans": "🟢"
-        }
-      }
-    },
-    "comment": "Арбуз містить сорбітол у великих кількостях.",
     "overall_fodmap_level": "High-FODMAP"
   }
 ]
