@@ -180,5 +180,259 @@
     },
     "comment": "Амарант містить велику кількість фруктанів у високих дозах.",
     "overall_fodmap_level": "high"
+  },
+   {
+    "id": "prod_006",
+    "name": "Ананас",
+    "category_id": "fruits",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "140г (1 чашка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Ананас безпечний у невеликих кількостях.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_007",
+    "name": "Аніс",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "2г (1 чайна ложка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Аніс використовується в невеликих кількостях, безпечний.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_008",
+    "name": "Артишок",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "30г (½ середнього артишока)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟡",
+          "fructans": "🔴"
+        }
+      },
+      "high": {
+        "amount": "80г (1 середній артишок)",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Артишок містить фруктани та FOS.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_009",
+    "name": "Артишок маринований",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "20г",
+        "fodmaps": {
+          "fructose": "🟡",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟡",
+          "fructans": "🔴"
+        }
+      },
+      "high": {
+        "amount": "50г і більше",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🔴",
+          "fructans": "🔴"
+        }
+      }
+    },
+    "comment": "Мариновані артишоки також багаті на фруктани.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_010",
+    "name": "Арбуз",
+    "category_id": "fruits",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "60г (1 скибка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "120г і більше",
+        "fodmaps": {
+          "fructose": "🔴",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Арбуз містить сорбітол у великих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_011",
+    "name": "Арахісова паста",
+    "category_id": "legumes",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "32г (2 столові ложки)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Арахісова паста підходить у невеликих кількостях.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_012",
+    "name": "Арахіс смажений",
+    "category_id": "legumes",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "28г (1 жменя)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Смажений арахіс безпечний у помірних дозах.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_013",
+    "name": "Базилік свіжий",
+    "category_id": "spices",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "1г (1 чайна ложка подрібненого)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Свіжий базилік не містить значущих FODMAP.",
+    "overall_fodmap_level": "low"
+  },
+  {
+    "id": "prod_014",
+    "name": "Батат (солодка картопля)",
+    "category_id": "vegetables",
+    "status": "🔴 High-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "70г (½ середньої бульби)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟡",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      },
+      "high": {
+        "amount": "200г (1 середня бульба)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🔴",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Батат містить сорбітол у великих кількостях.",
+    "overall_fodmap_level": "high"
+  },
+  {
+    "id": "prod_015",
+    "name": "Білий хліб без глютену",
+    "category_id": "bakery",
+    "status": "🟢 Low-FODMAP",
+    "doses": {
+      "low": {
+        "amount": "35г (1 скибка)",
+        "fodmaps": {
+          "fructose": "🟢",
+          "lactose": "🟢",
+          "mannitol": "🟢",
+          "sorbitol": "🟢",
+          "gos": "🟢",
+          "fructans": "🟢"
+        }
+      }
+    },
+    "comment": "Безглютеновий білий хліб підходить у рамках Low-FODMAP дієти.",
+    "overall_fodmap_level": "low"
   }
 ]
