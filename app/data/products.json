@@ -6,7 +6,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "15г",
+                "amount": "15г (1 столова ложка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -17,7 +17,7 @@
                 }
             },
             "moderate": {
-                "amount": "24г",
+                "amount": "24г (¾ середнього)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -28,7 +28,7 @@
                 }
             },
             "high": {
-                "amount": "70г",
+                "amount": "70г (2 середніх)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -39,7 +39,7 @@
                 }
             }
         },
-        "comment": "(1 столова ложка)   (¾ середнього)   (2 середніх)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -88,11 +88,11 @@
     {
         "id": "prod_003",
         "name": "Авокадо",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "60г",
+                "amount": "60г (3 столові ложки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -103,7 +103,7 @@
                 }
             },
             "moderate": {
-                "amount": "80г",
+                "amount": "80г (½ середнього фрукта)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -114,7 +114,7 @@
                 }
             },
             "high": {
-                "amount": "93г",
+                "amount": "93г (4½ столових ложок)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -125,17 +125,17 @@
                 }
             }
         },
-        "comment": "(3 столові ложки)   (½ середнього фрукта)   (4½ столових ложок)   Авокадо містить унікальний цукровий спирт - персеітол.",
+        "comment": "Авокадо містить унікальний цукровий спирт - персеітол.",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_004",
-        "name": "Агарагар",
-        "category_id": "snacks",
+        "name": "Агар-агар",
+        "category_id": "spices",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "7г",
+                "amount": "7г (1 паличка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -146,17 +146,17 @@
                 }
             }
         },
-        "comment": "(1 паличка)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_005",
         "name": "Амарант повітряний",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "10г",
+                "amount": "10г (¼ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -167,7 +167,7 @@
                 }
             },
             "high": {
-                "amount": "30г",
+                "amount": "30г (¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -178,17 +178,17 @@
                 }
             }
         },
-        "comment": "(¼ чашки)   (¾ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_006",
         "name": "Амарантове борошно",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🔴 High-FODMAP",
         "doses": {
             "high": {
-                "amount": "100г",
+                "amount": "100г (⅔ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -199,17 +199,17 @@
                 }
             }
         },
-        "comment": "(⅔ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_007",
         "name": "Ананас",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "140г",
+                "amount": "140г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -220,7 +220,7 @@
                 }
             },
             "moderate": {
-                "amount": "195г",
+                "amount": "195г (1¼ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -231,7 +231,7 @@
                 }
             },
             "high": {
-                "amount": "245г",
+                "amount": "245г (1¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -242,13 +242,13 @@
                 }
             }
         },
-        "comment": "(1 чашка)   (1¼ чашки)   (1¾ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_008",
         "name": "Ананас консервований у сиропі",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -274,7 +274,7 @@
                 }
             },
             "high": {
-                "amount": "107г",
+                "amount": "107г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -285,13 +285,13 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (½ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_009",
         "name": "Ананас консервований у власному соку",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -306,7 +306,7 @@
                 }
             },
             "moderate": {
-                "amount": "107г",
+                "amount": "107г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -328,13 +328,13 @@
                 }
             }
         },
-        "comment": "(None)   (½ чашки)   (None)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_010",
         "name": "Ананас сушений",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -349,7 +349,7 @@
                 }
             },
             "moderate": {
-                "amount": "26г",
+                "amount": "26г (1 шматочок)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -360,7 +360,7 @@
                 }
             },
             "high": {
-                "amount": "50г",
+                "amount": "50г (2 шматочки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -371,7 +371,7 @@
                 }
             }
         },
-        "comment": "(None)   (1 шматочок)   (2 шматочки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -381,7 +381,7 @@
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "2г",
+                "amount": "2г (2 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -392,17 +392,17 @@
                 }
             }
         },
-        "comment": "(2 шт)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_012",
         "name": "Апельсин",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "130г",
+                "amount": "130г (1 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -413,7 +413,7 @@
                 }
             },
             "moderate": {
-                "amount": "152г",
+                "amount": "152г (1¼ шт)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -424,7 +424,7 @@
                 }
             },
             "high": {
-                "amount": "229г",
+                "amount": "229г (1¾ шт)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -435,17 +435,17 @@
                 }
             }
         },
-        "comment": "(1 шт)   (1¼ шт)   (1¾ шт)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_013",
         "name": "Апельсиновий джем",
-        "category_id": "snacks",
+        "category_id": "sweets",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "40г",
+                "amount": "40г (2 столові ложки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -456,17 +456,17 @@
                 }
             }
         },
-        "comment": "(2 столові ложки)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_014",
         "name": "Апельсиновий сік свіжовичавлений",
-        "category_id": "snacks",
+        "category_id": "drinks",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "72г",
+                "amount": "72г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -477,7 +477,7 @@
                 }
             },
             "moderate": {
-                "amount": "97г",
+                "amount": "97г (½ склянки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -488,7 +488,7 @@
                 }
             },
             "high": {
-                "amount": "200г",
+                "amount": "200г (1 склянка)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -499,17 +499,17 @@
                 }
             }
         },
-        "comment": "(½ чашки)   (½ склянки)   (1 склянка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_015",
         "name": "Арахіс",
-        "category_id": "snacks",
+        "category_id": "legumes",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "28г",
+                "amount": "28г (32 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -520,17 +520,17 @@
                 }
             }
         },
-        "comment": "(32 шт)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_016",
         "name": "Арахісова паста",
-        "category_id": "snacks",
+        "category_id": "legumes",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "50г",
+                "amount": "50г (2 столові ложки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -541,17 +541,17 @@
                 }
             }
         },
-        "comment": "(2 столові ложки)   Слід уникати великі порцій (>140 г) даного продукту у зв'язку з високим вмістом фруктози.",
+        "comment": "Слід уникати великі порцій (>140 г) даного продукту у зв'язку з високим вмістом фруктози.",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_017",
         "name": "Кавун без кісточок",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "18г",
+                "amount": "18г (3 чайні ложки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -562,7 +562,7 @@
                 }
             },
             "moderate": {
-                "amount": "24г",
+                "amount": "24г (1 столова ложка)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -573,7 +573,7 @@
                 }
             },
             "high": {
-                "amount": "150г",
+                "amount": "150г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -584,7 +584,7 @@
                 }
             }
         },
-        "comment": "(3 чайні ложки)   (1 столова ложка)   (1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -616,7 +616,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (¾ шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -627,7 +627,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (¾ шт)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -648,7 +648,7 @@
                 }
             },
             "moderate": {
-                "amount": "16г",
+                "amount": "16г (1 столова ложка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -659,7 +659,7 @@
                 }
             },
             "high": {
-                "amount": "50г",
+                "amount": "50г (¼ чашки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -670,7 +670,7 @@
                 }
             }
         },
-        "comment": "(None)   (1 столова ложка)   (¼ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -680,7 +680,7 @@
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "16г",
+                "amount": "16г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -691,7 +691,7 @@
                 }
             }
         },
-        "comment": "(1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -701,7 +701,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "2г",
+                "amount": "2г (1 чайна ложка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -712,7 +712,7 @@
                 }
             },
             "moderate": {
-                "amount": "145г",
+                "amount": "145г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -723,7 +723,7 @@
                 }
             },
             "high": {
-                "amount": "195г",
+                "amount": "195г (1⅓ чашки)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -734,17 +734,17 @@
                 }
             }
         },
-        "comment": "(1 чайна ложка)   (1 чашка)   (1⅓ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_022",
         "name": "Баклажан",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "75г",
+                "amount": "75г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -755,7 +755,7 @@
                 }
             },
             "moderate": {
-                "amount": "178г",
+                "amount": "178г (2½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -766,7 +766,7 @@
                 }
             },
             "high": {
-                "amount": "269г",
+                "amount": "269г (3½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -777,7 +777,7 @@
                 }
             }
         },
-        "comment": "(1 чашка)   (2½ чашки)   (3½ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -787,7 +787,7 @@
         "status": "🟡 Medium-FODMAP",
         "doses": {
             "low": {
-                "amount": "21г",
+                "amount": "21г (1 столова ложка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -798,7 +798,7 @@
                 }
             },
             "moderate": {
-                "amount": "42г",
+                "amount": "42г (2 столові ложки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -809,17 +809,17 @@
                 }
             }
         },
-        "comment": "(1 столова ложка)   (2 столові ложки)",
+        "comment": "",
         "overall_fodmap_level": "medium"
     },
     {
         "id": "prod_024",
         "name": "Банан нестиглий",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "95г",
+                "amount": "95г (1 шт середній)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -830,7 +830,7 @@
                 }
             },
             "moderate": {
-                "amount": "100",
+                "amount": "100г (1 шт великий)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -841,7 +841,7 @@
                 }
             },
             "high": {
-                "amount": "123",
+                "amount": "123г",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -852,17 +852,17 @@
                 }
             }
         },
-        "comment": "(1 шт середній)   (1 шт великий)   (None)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_025",
         "name": "Банан стиглий",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "37г",
+                "amount": "37г (⅓ шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -873,7 +873,7 @@
                 }
             },
             "moderate": {
-                "amount": "47г",
+                "amount": "47г (½ шт) ",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -884,7 +884,7 @@
                 }
             },
             "high": {
-                "amount": "95г",
+                "amount": "95г (1 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -895,17 +895,17 @@
                 }
             }
         },
-        "comment": "(⅓ шт)   (½ шт)   (1 шт)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_026",
         "name": "Банан сушений",
-        "category_id": "snacks",
+        "category_id": "fruits",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "30г",
+                "amount": "30г (15 шматочків)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -916,7 +916,7 @@
                 }
             },
             "moderate": {
-                "amount": "32г",
+                "amount": "32г (16 шматочків)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -927,7 +927,7 @@
                 }
             },
             "high": {
-                "amount": "38г",
+                "amount": "38г (19 шматочків)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -938,17 +938,17 @@
                 }
             }
         },
-        "comment": "(15 шматочків)   (16 шматочків)   (19 шматочків)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_027",
         "name": "Бананове борошно (із зеленого банана)",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "100г",
+                "amount": "100г (⅔ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -959,13 +959,13 @@
                 }
             }
         },
-        "comment": "(⅔ чашки)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_028",
         "name": "Бараніна",
-        "category_id": "snacks",
+        "category_id": "meat",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -980,7 +980,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -990,7 +990,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "high": {
-                "amount": "32г",
+                "amount": "32г (1 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1001,17 +1001,17 @@
                 }
             }
         },
-        "comment": "(1 шт)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_030",
         "name": "Безглютенове борошно",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "100г",
+                "amount": "100г (⅔ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1022,17 +1022,17 @@
                 }
             }
         },
-        "comment": "(⅔ чашки)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_031",
         "name": "Безглютенова паста (кукурудзяно рисова) приготована",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "80г",
+                "amount": "80г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1043,17 +1043,17 @@
                 }
             }
         },
-        "comment": "(1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_032",
         "name": "Безглютенова паста (сочевична) приготована",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "36г",
+                "amount": "36г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1075,7 +1075,7 @@
                 }
             },
             "high": {
-                "amount": "80г",
+                "amount": "80г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1086,17 +1086,17 @@
                 }
             }
         },
-        "comment": "(½ чашки)   (None)   (1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_033",
         "name": "Безглютеновий хліб, мультизлаковий",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🟡 Medium-FODMAP",
         "doses": {
             "low": {
-                "amount": "37г",
+                "amount": "37г (1 шматок)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1107,7 +1107,7 @@
                 }
             },
             "moderate": {
-                "amount": "73г",
+                "amount": "73г (2 шматки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1118,7 +1118,7 @@
                 }
             }
         },
-        "comment": "(1 шматок)   (2 шматки)",
+        "comment": "",
         "overall_fodmap_level": "medium"
     },
     {
@@ -1139,7 +1139,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -1149,7 +1149,7 @@
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "149г",
+                "amount": "149г (1 келих / 150 мл)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1160,7 +1160,7 @@
                 }
             }
         },
-        "comment": "(1 келих / 150 мл)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -1170,7 +1170,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "75г",
+                "amount": "75г (¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1181,7 +1181,7 @@
                 }
             },
             "moderate": {
-                "amount": "194г",
+                "amount": "194г (2 чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1192,7 +1192,7 @@
                 }
             },
             "high": {
-                "amount": "244г",
+                "amount": "244г (2½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1203,7 +1203,7 @@
                 }
             }
         },
-        "comment": "(¾ чашки)   (2 чашки)   (2½ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -1230,11 +1230,11 @@
     {
         "id": "prod_038",
         "name": "Білий гриб сушений",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "12г",
+                "amount": "12г (1 столова ложка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1245,7 +1245,7 @@
                 }
             },
             "moderate": {
-                "amount": "19г",
+                "amount": "19г (2 столові ложки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1256,7 +1256,7 @@
                 }
             },
             "high": {
-                "amount": "30г",
+                "amount": "30г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1267,7 +1267,7 @@
                 }
             }
         },
-        "comment": "(1 столова ложка)   (2 столові ложки)   (½ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -1277,7 +1277,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "10г",
+                "amount": "10г (1 кільце)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1288,7 +1288,7 @@
                 }
             },
             "moderate": {
-                "amount": "12г",
+                "amount": "12г (1 кільце)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1299,7 +1299,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (¾ середньої цибулини або ½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1310,17 +1310,17 @@
                 }
             }
         },
-        "comment": "(1 кільце)   (1 кільце)   (¾ середньої цибулини або ½ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_040",
         "name": "Білий рис, приготований",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "190г",
+                "amount": "190г (1 чашка, приготований)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1331,17 +1331,17 @@
                 }
             }
         },
-        "comment": "(1 чашка, приготований)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_041",
         "name": "Білий цукор",
-        "category_id": "snacks",
+        "category_id": "sweets",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "50г",
+                "amount": "50г (¼ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1352,7 +1352,7 @@
                 }
             }
         },
-        "comment": "(¼ чашки)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -2082,7 +2082,7 @@
                 }
             }
         },
-        "comment": "(2⅔ середніх)   (None)   (4 шт)",
+        "comment": "(2⅔ середніх)      (4 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -2498,7 +2498,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -2797,7 +2797,7 @@
                 }
             }
         },
-        "comment": "(None)   (½ чашки)   (1 шт)",
+        "comment": "   (½ чашки)   (1 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -2840,7 +2840,7 @@
                 }
             }
         },
-        "comment": "(15 половинок горіха)   (None)   (18 половинок горіха)",
+        "comment": "(15 половинок горіха)      (18 половинок горіха)",
         "overall_fodmap_level": "high"
     },
     {
@@ -2968,7 +2968,7 @@
                 }
             }
         },
-        "comment": "(None)   (⅕ шт)   (1 шт)",
+        "comment": "   (⅕ шт)   (1 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -3032,7 +3032,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (1 чашка)",
+        "comment": "      (1 чашка)",
         "overall_fodmap_level": "high"
     },
     {
@@ -3075,7 +3075,7 @@
                 }
             }
         },
-        "comment": "(None)   (⅔ гриба)   (4 шт)",
+        "comment": "   (⅔ гриба)   (4 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -3247,7 +3247,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (1 середня)",
+        "comment": "      (1 середня)",
         "overall_fodmap_level": "high"
     },
     {
@@ -3951,7 +3951,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -4154,7 +4154,7 @@
                 }
             }
         },
-        "comment": "(None)   (3 столові ложки)   (¾ чашки)",
+        "comment": "   (3 столові ложки)   (¾ чашки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -4940,7 +4940,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (½ чашки)",
+        "comment": "      (½ чашки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -4983,7 +4983,7 @@
                 }
             }
         },
-        "comment": "(None)   (½ чашки)   (None)",
+        "comment": "   (½ чашки)   ",
         "overall_fodmap_level": "high"
     },
     {
@@ -5026,7 +5026,7 @@
                 }
             }
         },
-        "comment": "(None)   (1 шматочок)   (2 шматочки)",
+        "comment": "   (1 шматочок)   (2 шматочки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -5325,7 +5325,7 @@
                 }
             }
         },
-        "comment": "(None)   (1 столова ложка)   (¼ чашки)",
+        "comment": "   (1 столова ложка)   (¼ чашки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -5410,7 +5410,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (None)",
+        "comment": "      ",
         "overall_fodmap_level": "high"
     },
     {
@@ -5581,7 +5581,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (½ чашки)",
+        "comment": "      (½ чашки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -5730,7 +5730,7 @@
                 }
             }
         },
-        "comment": "(1 чашка)   (None)   (1¾ чашки)",
+        "comment": "(1 чашка)      (1¾ чашки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -6231,7 +6231,7 @@
                 }
             }
         },
-        "comment": "(½ чашки)   (None)   (None)",
+        "comment": "(½ чашки)      ",
         "overall_fodmap_level": "high"
     },
     {
@@ -6560,7 +6560,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -6804,7 +6804,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -6973,7 +6973,7 @@
                 }
             }
         },
-        "comment": "(None)   (½ шт)   (4 шт)",
+        "comment": "   (½ шт)   (4 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -6994,7 +6994,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -7100,7 +7100,7 @@
                 }
             }
         },
-        "comment": "(¼ чашки)   (None)   (1 чашка)",
+        "comment": "(¼ чашки)      (1 чашка)",
         "overall_fodmap_level": "high"
     },
     {
@@ -8047,7 +8047,7 @@
                 }
             }
         },
-        "comment": "(None)   (⅓ чашки)   (1 шт)",
+        "comment": "   (⅓ чашки)   (1 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -9808,7 +9808,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -9829,7 +9829,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -9872,7 +9872,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (1 чашка)",
+        "comment": "      (1 чашка)",
         "overall_fodmap_level": "high"
     },
     {
@@ -10107,7 +10107,7 @@
                 }
             }
         },
-        "comment": "(2 тонких шматочки)   (None)   (1 шт маленька)",
+        "comment": "(2 тонких шматочки)      (1 шт маленька)",
         "overall_fodmap_level": "high"
     },
     {
@@ -10213,7 +10213,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -10299,7 +10299,7 @@
                 }
             }
         },
-        "comment": "(None)   (7 см стебла)   (12 см стебло)",
+        "comment": "   (7 см стебла)   (12 см стебло)",
         "overall_fodmap_level": "high"
     },
     {
@@ -10650,7 +10650,7 @@
                 }
             }
         },
-        "comment": "(None)   (1 столова ложка)   (1 шт)",
+        "comment": "   (1 столова ложка)   (1 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -11721,7 +11721,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -12008,7 +12008,7 @@
                 }
             }
         },
-        "comment": "(None)   (1½ столової ложки)   (2 шт)",
+        "comment": "   (1½ столової ложки)   (2 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -12563,7 +12563,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (¼ чашки)",
+        "comment": "      (¼ чашки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -12809,7 +12809,7 @@
                 }
             }
         },
-        "comment": "(2 чашки)   (None)   (None)",
+        "comment": "(2 чашки)      ",
         "overall_fodmap_level": "high"
     },
     {
@@ -12947,7 +12947,7 @@
                 }
             }
         },
-        "comment": "(2 столові ложки)   (None)",
+        "comment": "(2 столові ложки)   ",
         "overall_fodmap_level": "medium"
     },
     {
@@ -13107,7 +13107,7 @@
                 }
             }
         },
-        "comment": "(1 шт)   (None)   (1½ шт)",
+        "comment": "(1 шт)      (1½ шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -13629,7 +13629,7 @@
                 }
             }
         },
-        "comment": "(2 столові ложки)   (None)   (None)",
+        "comment": "(2 столові ложки)      ",
         "overall_fodmap_level": "high"
     },
     {
@@ -13757,7 +13757,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (1 чашка)",
+        "comment": "      (1 чашка)",
         "overall_fodmap_level": "high"
     },
     {
@@ -13800,7 +13800,7 @@
                 }
             }
         },
-        "comment": "(1 чашка)   (None)   (None)",
+        "comment": "(1 чашка)      ",
         "overall_fodmap_level": "high"
     },
     {
@@ -14501,7 +14501,7 @@
                 }
             }
         },
-        "comment": "(None)   (⅞ шт)   (1 шт)",
+        "comment": "   (⅞ шт)   (1 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -14543,7 +14543,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -14564,7 +14564,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -15043,7 +15043,7 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (½ чашки)",
+        "comment": "      (½ чашки)",
         "overall_fodmap_level": "high"
     },
     {
@@ -15309,7 +15309,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
@@ -15745,7 +15745,7 @@
                 }
             }
         },
-        "comment": "(None)   (⅛ шт)   (1 шт)",
+        "comment": "   (⅛ шт)   (1 шт)",
         "overall_fodmap_level": "high"
     },
     {
@@ -15926,7 +15926,7 @@
                 }
             }
         },
-        "comment": "(None)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
