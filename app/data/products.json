@@ -1358,11 +1358,11 @@
     {
         "id": "prod_042",
         "name": "Білий хліб, пшеничний",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "24г",
+                "amount": "24г (1 шматок)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1373,7 +1373,7 @@
                 }
             },
             "moderate": {
-                "amount": "36г",
+                "amount": "36г (1½ шматка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1384,7 +1384,7 @@
                 }
             },
             "high": {
-                "amount": "49г",
+                "amount": "49г (2 шматки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1395,17 +1395,17 @@
                 }
             }
         },
-        "comment": "(1 шматок)   (1½ шматка)   (2 шматки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_043",
         "name": "Білий шоколад",
-        "category_id": "snacks",
+        "category_id": "sweets",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "25г",
+                "amount": "25г (4 часточки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1416,7 +1416,7 @@
                 }
             },
             "moderate": {
-                "amount": "30г",
+                "amount": "30г (5 часточок)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1427,7 +1427,7 @@
                 }
             },
             "high": {
-                "amount": "110г",
+                "amount": "110г (18 часточок)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1438,17 +1438,17 @@
                 }
             }
         },
-        "comment": "(4 часточки)   (5 часточок)   (18 часточок)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_044",
         "name": "Боби адзукі варені",
-        "category_id": "snacks",
+        "category_id": "legumes",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "35г",
+                "amount": "35г (⅕ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1459,7 +1459,7 @@
                 }
             },
             "moderate": {
-                "amount": "40г",
+                "amount": "40г (¼ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1470,7 +1470,7 @@
                 }
             },
             "high": {
-                "amount": "150г",
+                "amount": "150г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1481,17 +1481,17 @@
                 }
             }
         },
-        "comment": "(⅕ чашки)   (¼ чашки)   (1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_045",
         "name": "Боби мунг/маш очищені варені очищені",
-        "category_id": "snacks",
+        "category_id": "legumes",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "49г",
+                "amount": "49г (2 столові ложки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1502,7 +1502,7 @@
                 }
             },
             "moderate": {
-                "amount": "58г",
+                "amount": "58г (¼ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1513,7 +1513,7 @@
                 }
             },
             "high": {
-                "amount": "73г",
+                "amount": "73г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1524,7 +1524,7 @@
                 }
             }
         },
-        "comment": "(2 столові ложки)   (¼ чашки)   (½ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
