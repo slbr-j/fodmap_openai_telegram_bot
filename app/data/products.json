@@ -6915,7 +6915,7 @@
     {
         "id": "prod_215",
         "name": "Кунжутна олія",
-        "category_id": "snacks",
+        "category_id": "fats",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -7510,7 +7510,7 @@
     {
         "id": "prod_236",
         "name": "Оливкова олія",
-        "category_id": "snacks",
+        "category_id": "fats",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -8508,7 +8508,7 @@
     {
         "id": "prod_272",
         "name": "Подсоняшникова олія",
-        "category_id": "snacks",
+        "category_id": "fats",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -10656,7 +10656,7 @@
     {
         "id": "prod_346",
         "name": "Вершкове масло",
-        "category_id": "snacks",
+        "category_id": "fats",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -13699,7 +13699,7 @@
     {
         "id": "prod_449",
         "name": "Топлене масло",
-        "category_id": "snacks",
+        "category_id": "fats",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -14985,7 +14985,7 @@
     {
         "id": "prod_494",
         "name": "Чесночна рослинна олія",
-        "category_id": "snacks",
+        "category_id": "fats",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
