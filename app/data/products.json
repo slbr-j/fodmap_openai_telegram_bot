@@ -1534,7 +1534,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "29г",
+                "amount": "29г (6 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1545,7 +1545,7 @@
                 }
             },
             "moderate": {
-                "amount": "44",
+                "amount": "44 (9 шт)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1556,7 +1556,7 @@
                 }
             },
             "high": {
-                "amount": "144",
+                "amount": "144 (1 чашка)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1567,7 +1567,7 @@
                 }
             }
         },
-        "comment": "(6 шт)   (9 шт)   (1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -1577,7 +1577,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "35г",
+                "amount": "35г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1588,7 +1588,7 @@
                 }
             },
             "moderate": {
-                "amount": "47г",
+                "amount": "47г (⅔ чашки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1599,7 +1599,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1610,7 +1610,7 @@
                 }
             }
         },
-        "comment": "(½ чашки)   (⅔ чашки)   (1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -1620,7 +1620,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "75г",
+                "amount": "75г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1631,7 +1631,7 @@
                 }
             },
             "moderate": {
-                "amount": "250г",
+                "amount": "250г (3⅓ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1642,7 +1642,7 @@
                 }
             },
             "high": {
-                "amount": "310г",
+                "amount": "310г (4 чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1653,7 +1653,7 @@
                 }
             }
         },
-        "comment": "(1 чашка)   (3⅓ чашки)   (4 чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -1663,7 +1663,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "43г",
+                "amount": "43г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1674,7 +1674,7 @@
                 }
             },
             "moderate": {
-                "amount": "59г",
+                "amount": "59г (¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1685,7 +1685,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1696,7 +1696,7 @@
                 }
             }
         },
-        "comment": "(½ чашки)   (¾ чашки)   (1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -1706,7 +1706,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "38г",
+                "amount": "38г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1717,7 +1717,7 @@
                 }
             },
             "moderate": {
-                "amount": "51г",
+                "amount": "51г (⅔ чашки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1728,7 +1728,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (1 чашка)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1739,17 +1739,28 @@
                 }
             }
         },
-        "comment": "(½ чашки)   (⅔ чашки)   (1 чашка)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_051",
         "name": "Бородинський хліб",
-        "category_id": "snacks",
+        "category_id": "bakery",
         "status": "🔴 High-FODMAP",
         "doses": {
+            "moderate": {
+                "amount": "43г (1 шматок)",
+                "fodmaps": {
+                    "fructose": "🟢",
+                    "lactose": "🟢",
+                    "mannitol": "🟢",
+                    "sorbitol": "🟢",
+                    "gos": "🟢",
+                    "fructans": "🟢"
+                }
+            }
             "high": {
-                "amount": "86г",
+                "amount": "86г (2 шматки)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1760,17 +1771,17 @@
                 }
             }
         },
-        "comment": "(1 шматок)   (2 шматки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_052",
         "name": "Бразильський горіх",
-        "category_id": "snacks",
+        "category_id": "legumes",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "30г",
+                "amount": "30г (10 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1781,7 +1792,7 @@
                 }
             },
             "moderate": {
-                "amount": "44г",
+                "amount": "44г (15 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1792,7 +1803,7 @@
                 }
             },
             "high": {
-                "amount": "51г",
+                "amount": "51г (17 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1803,17 +1814,17 @@
                 }
             }
         },
-        "comment": "(10 шт)   (15 шт)   (17 шт)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_053",
-        "name": "Бренди",
-        "category_id": "snacks",
+        "name": "Бренді",
+        "category_id": "drinks",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
-                "amount": "30г",
+                "amount": "30г (1 шот)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1824,17 +1835,17 @@
                 }
             }
         },
-        "comment": "(1 шот)",
+        "comment": "",
         "overall_fodmap_level": "low"
     },
     {
         "id": "prod_054",
         "name": "Брокколі (тільки суцвіття)",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "75г",
+                "amount": "75г (¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1845,7 +1856,7 @@
                 }
             },
             "moderate": {
-                "amount": "208г",
+                "amount": "208г (2 чашки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1856,7 +1867,7 @@
                 }
             },
             "high": {
-                "amount": "279",
+                "amount": "279 (2¾ чашки)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1867,17 +1878,17 @@
                 }
             }
         },
-        "comment": "(¾ чашки)   (2 чашки)   (2¾ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_055",
         "name": "Брокколі (тільки стебла)",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "42г",
+                "amount": "42г (⅓ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1888,7 +1899,7 @@
                 }
             },
             "moderate": {
-                "amount": "57г",
+                "amount": "57г (½ чашки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1899,7 +1910,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (¾ чашки)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1910,17 +1921,17 @@
                 }
             }
         },
-        "comment": "(⅓ чашки)   (½ чашки)   (¾ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_056",
         "name": "Брокколіні (тільки суцвіття)",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "21г",
+                "amount": "21г (¼ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1931,7 +1942,7 @@
                 }
             },
             "moderate": {
-                "amount": "38г",
+                "amount": "38г (⅓ чашки)",
                 "fodmaps": {
                     "fructose": "🟡",
                     "lactose": "🟡",
@@ -1942,7 +1953,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (¾ чашки)",
                 "fodmaps": {
                     "fructose": "🔴",
                     "lactose": "🔴",
@@ -1953,17 +1964,17 @@
                 }
             }
         },
-        "comment": "(¼ чашки)   (⅓ чашки)   (¾ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_057",
         "name": "Брокколіні (тільки стебла)",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "75г",
+                "amount": "75г (¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1974,7 +1985,7 @@
                 }
             },
             "moderate": {
-                "amount": "275г",
+                "amount": "275г (2¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1985,7 +1996,7 @@
                 }
             },
             "high": {
-                "amount": "350г",
+                "amount": "350г (3¾ чашки)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -1996,7 +2007,7 @@
                 }
             }
         },
-        "comment": "(¾ чашки)   (2¾ чашки)   (3¾ чашки)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -2006,7 +2017,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "75г",
+                "amount": "75г (½ середньої)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -2017,7 +2028,7 @@
                 }
             },
             "moderate": {
-                "amount": "93",
+                "amount": "93 (⅔ середньої)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -2028,7 +2039,7 @@
                 }
             },
             "high": {
-                "amount": "135",
+                "amount": "135 (1 середня)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -2039,7 +2050,7 @@
                 }
             }
         },
-        "comment": "(½ середньої)   (⅔ середньої)   (1 середня)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
@@ -2049,7 +2060,7 @@
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
-                "amount": "53г",
+                "amount": "53г (2⅔ середніх)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -2071,7 +2082,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (4 шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -2082,7 +2093,7 @@
                 }
             }
         },
-        "comment": "(2⅔ середніх)      (4 шт)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
