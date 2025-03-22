@@ -4053,7 +4053,7 @@
     {
         "id": "prod_119",
         "name": "Йогурт (з козячого молока)",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -4096,7 +4096,7 @@
     {
         "id": "prod_120",
         "name": "Йогурт безлактозний",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -4117,7 +4117,7 @@
     {
         "id": "prod_121",
         "name": "Йогурт грецький",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -4160,7 +4160,7 @@
     {
         "id": "prod_122",
         "name": "Йогурт кокосовий",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -4181,7 +4181,7 @@
     {
         "id": "prod_123",
         "name": "Йогурт натуральний",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -6088,7 +6088,7 @@
     {
         "id": "prod_184",
         "name": "Кокосове молоко з інуліном",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🔴 High-FODMAP",
         "doses": {
             "high": {
@@ -7255,7 +7255,7 @@
     {
         "id": "prod_227",
         "name": "Вівсяне молоко",
-        "category_id": "snacks",
+        "category_id": "drinks",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -9528,7 +9528,7 @@
     {
         "id": "prod_308",
         "name": "Рисове молоко",
-        "category_id": "snacks",
+        "category_id": "drinks",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -10219,7 +10219,7 @@
     {
         "id": "prod_332",
         "name": "Згущене молоко",
-        "category_id": "snacks",
+        "category_id": "sweets",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -10709,7 +10709,7 @@
     {
         "id": "prod_348",
         "name": "Вершковий сир безлактозний",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -10869,7 +10869,7 @@
     {
         "id": "prod_353",
         "name": "Соєве молоко (із соєвого білка)",
-        "category_id": "snacks",
+        "category_id": "drinks",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -10890,7 +10890,7 @@
     {
         "id": "prod_354",
         "name": "Соєве молоко (із соєвих бобів)",
-        "category_id": "snacks",
+        "category_id": "drinks",
         "status": "🔴 High-FODMAP",
         "doses": {
             "high": {
@@ -11346,7 +11346,7 @@
     {
         "id": "prod_371",
         "name": "Сухе кокосове молоко",
-        "category_id": "snacks",
+        "category_id": "drinks",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -13380,7 +13380,7 @@
     {
         "id": "prod_438",
         "name": "Миндальне молоко",
-        "category_id": "snacks",
+        "category_id": "drinks",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
@@ -16049,7 +16049,7 @@
     {
         "id": "prod_530",
         "name": "Молоко",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -16092,7 +16092,7 @@
     {
         "id": "prod_531",
         "name": "Молоко безлактозне",
-        "category_id": "snacks",
+        "category_id": "dairy",
         "status": "🟢 Low-FODMAP",
         "doses": {
             "low": {
