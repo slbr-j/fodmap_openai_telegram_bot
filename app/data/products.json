@@ -590,7 +590,7 @@
     {
         "id": "prod_018",
         "name": "Артишок",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -633,7 +633,7 @@
     {
         "id": "prod_019",
         "name": "Артишок маринований в олії",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -5271,7 +5271,7 @@
                 }
             },
             "high": {
-                "amount": "75г",
+                "amount": "75г (¾ шт)",
                 "fodmaps": {
                     "fructose": "🟢",
                     "lactose": "🟢",
@@ -5282,13 +5282,13 @@
                 }
             }
         },
-        "comment": "(None)   (None)   (¾ шт)",
+        "comment": "",
         "overall_fodmap_level": "high"
     },
     {
         "id": "prod_159",
         "name": "Артишок маринований в олії",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -10463,7 +10463,7 @@
     {
         "id": "prod_341",
         "name": "Серцевини артишоку, консервовані",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "low": {
@@ -13678,7 +13678,7 @@
     {
         "id": "prod_448",
         "name": "Топінамбур / артишок єрусалимський",
-        "category_id": "snacks",
+        "category_id": "vegetables",
         "status": "🔴 High-FODMAP",
         "doses": {
             "high": {
